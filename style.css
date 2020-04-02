@@ -77,53 +77,53 @@
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.hbs-wrap .mphb_sc_search-form {
+  .mphb_sc_search-wrapper.mphbs-wrap .mphb_sc_search-form {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.hbs-fw-20 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-20 .mphb_sc_search-form > p {
     width: 100%;
     max-width: 20%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.hbs-fw-25 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-25 .mphb_sc_search-form > p {
     width: 100%;
     max-width: 25%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.hbs-fw-33 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-33 .mphb_sc_search-form > p {
     width: 100%;
     max-width: 33.33%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.hbs-fw-50 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-50 .mphb_sc_search-form > p {
     width: 100%;
     max-width: 50%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.hbs-fw-100 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-100 .mphb_sc_search-form > p {
     width: 100%;
     max-width: 100%;
   }
 }
 
-.mphb_sc_search-wrapper.hbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper {
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper {
   max-width: 100%;
   width: auto;
 }
 
-.mphb_sc_search-wrapper.hbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper .button {
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper .button {
   width: 100%;
 }
 
@@ -162,75 +162,75 @@
   white-space: normal;
 }
 
-.mphb_sc_booking_form-wrapper.hbs-hide-rf-tip .mphb-required-fields-tip,
-.mphb_sc_search-wrapper.hbs-hide-rf-tip .mphb-required-fields-tip {
+.mphb_sc_booking_form-wrapper.mphbs-hide-rf-tip .mphb-required-fields-tip,
+.mphb_sc_search-wrapper.mphbs-hide-rf-tip .mphb-required-fields-tip {
   display: none;
 }
 
-.mphb_sc_booking_form-wrapper.hbs-hide-labels br,
-.mphb_sc_booking_form-wrapper.hbs-hide-labels label,
-.mphb_sc_search-wrapper.hbs-hide-labels br,
-.mphb_sc_search-wrapper.hbs-hide-labels label {
+.mphb_sc_booking_form-wrapper.mphbs-hide-labels br,
+.mphb_sc_booking_form-wrapper.mphbs-hide-labels label,
+.mphb_sc_search-wrapper.mphbs-hide-labels br,
+.mphb_sc_search-wrapper.mphbs-hide-labels label {
   display: none;
 }
 
-.mphb_sc_booking_form-wrapper.hbs-no-paddings .mphb_sc_search-form,
-.mphb_sc_search-wrapper.hbs-no-paddings .mphb_sc_search-form {
+.mphb_sc_booking_form-wrapper.mphbs-no-paddings .mphb_sc_search-form,
+.mphb_sc_search-wrapper.mphbs-no-paddings .mphb_sc_search-form {
   margin: 0;
 }
 
-.mphb_sc_booking_form-wrapper.hbs-no-paddings .mphb_sc_search-form > p,
-.mphb_sc_search-wrapper.hbs-no-paddings .mphb_sc_search-form > p {
+.mphb_sc_booking_form-wrapper.mphbs-no-paddings .mphb_sc_search-form > p,
+.mphb_sc_search-wrapper.mphbs-no-paddings .mphb_sc_search-form > p {
   padding: 0;
 }
 
 @media (min-width: 768px) {
-  .mphb_widget_search-form.hbs-wrap {
+  .mphb_widget_search-form.mphbs-wrap {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_widget_search-form.hbs-fw-20 > p {
+  .mphb_widget_search-form.mphbs-fw-20 > p {
     width: 100%;
     max-width: 20%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_widget_search-form.hbs-fw-25 > p {
+  .mphb_widget_search-form.mphbs-fw-25 > p {
     width: 100%;
     max-width: 25%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_widget_search-form.hbs-fw-33 > p {
+  .mphb_widget_search-form.mphbs-fw-33 > p {
     width: 100%;
     max-width: 33.33%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_widget_search-form.hbs-fw-50 > p {
+  .mphb_widget_search-form.mphbs-fw-50 > p {
     width: 100%;
     max-width: 50%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_widget_search-form.hbs-fw-100 > p {
+  .mphb_widget_search-form.mphbs-fw-100 > p {
     width: 100%;
     max-width: 100%;
   }
 }
 
-.mphb_widget_search-form.hbs-fluid-button .mphb_widget_search-submit-button-wrapper {
+.mphb_widget_search-form.mphbs-fluid-button .mphb_widget_search-submit-button-wrapper {
   max-width: 100%;
   width: auto;
 }
 
-.mphb_widget_search-form.hbs-fluid-button .mphb_widget_search-submit-button-wrapper .button {
+.mphb_widget_search-form.mphbs-fluid-button .mphb_widget_search-submit-button-wrapper .button {
   width: 100%;
 }

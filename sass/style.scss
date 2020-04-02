@@ -47,7 +47,7 @@
 }
 
 .mphb_sc_search-wrapper {
-	&.hbs-wrap {
+	&.mphbs-wrap {
 		.mphb_sc_search-form {
 			@include respond-to(sm) {
 				flex-wrap: wrap;
@@ -55,7 +55,7 @@
 		}
 	}
 
-	&.hbs-fw-20 {
+	&.mphbs-fw-20 {
 		.mphb_sc_search-form {
 			> p {
 				@include respond-to(sm) {
@@ -66,7 +66,7 @@
 		}
 	}
 
-	&.hbs-fw-25 {
+	&.mphbs-fw-25 {
 		.mphb_sc_search-form {
 			> p {
 				@include respond-to(sm) {
@@ -77,7 +77,7 @@
 		}
 	}
 
-	&.hbs-fw-33 {
+	&.mphbs-fw-33 {
 		.mphb_sc_search-form {
 			> p {
 				@include respond-to(sm) {
@@ -88,7 +88,7 @@
 		}
 	}
 
-	&.hbs-fw-50 {
+	&.mphbs-fw-50 {
 		.mphb_sc_search-form {
 			> p {
 				@include respond-to(sm) {
@@ -99,7 +99,7 @@
 		}
 	}
 
-	&.hbs-fw-100 {
+	&.mphbs-fw-100 {
 		.mphb_sc_search-form {
 			> p {
 				@include respond-to(sm) {
@@ -110,7 +110,7 @@
 		}
 	}
 
-	&.hbs-fluid-button {
+	&.mphbs-fluid-button {
 		.mphb_sc_search-form {
 			.mphb_sc_search-submit-button-wrapper {
 				max-width: 100%;
@@ -167,20 +167,20 @@
 
 .mphb_sc_booking_form-wrapper,
 .mphb_sc_search-wrapper {
-	&.hbs-hide-rf-tip {
+	&.mphbs-hide-rf-tip {
 		.mphb-required-fields-tip {
 			display: none;
 		}
 	}
 
-	&.hbs-hide-labels {
+	&.mphbs-hide-labels {
 		br,
 		label {
 			display: none;
 		}
 	}
 
-	&.hbs-no-paddings {
+	&.mphbs-no-paddings {
 		.mphb_sc_search-form {
 			margin: 0;
 
@@ -192,13 +192,13 @@
 }
 
 .mphb_widget_search-form {
-	&.hbs-wrap {
+	&.mphbs-wrap {
 		@include respond-to(sm) {
 			flex-wrap: wrap;
 		}
 	}
 
-	&.hbs-fw-20 {
+	&.mphbs-fw-20 {
 		> p {
 			@include respond-to(sm) {
 				width: 100%;
@@ -207,7 +207,7 @@
 		}
 	}
 
-	&.hbs-fw-25 {
+	&.mphbs-fw-25 {
 		> p {
 			@include respond-to(sm) {
 				width: 100%;
@@ -216,7 +216,7 @@
 		}
 	}
 
-	&.hbs-fw-33 {
+	&.mphbs-fw-33 {
 		> p {
 			@include respond-to(sm) {
 				width: 100%;
@@ -225,7 +225,7 @@
 		}
 	}
 
-	&.hbs-fw-50 {
+	&.mphbs-fw-50 {
 		> p {
 			@include respond-to(sm) {
 				width: 100%;
@@ -234,7 +234,7 @@
 		}
 	}
 
-	&.hbs-fw-100 {
+	&.mphbs-fw-100 {
 		> p {
 			@include respond-to(sm) {
 				width: 100%;
@@ -243,7 +243,7 @@
 		}
 	}
 
-	&.hbs-fluid-button {
+	&.mphbs-fluid-button {
 		.mphb_widget_search-submit-button-wrapper {
 			max-width: 100%;
 			width: auto;

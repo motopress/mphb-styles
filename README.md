@@ -2,17 +2,17 @@
 
 `is-style-horizontal-form` - делает форму горизонтальной
 
-`hbs-hide-labels` - убирает лейблы
+`mphbs-hide-labels` - убирает лейблы
 
-`hbs-no-paddings` - убирает паддинги
+`mphbs-no-paddings` - убирает паддинги
 
-`hbs-hide-rf-tip` - убирает реквайред филдс тип
+`mphbs-hide-rf-tip` - убирает реквайред филдс тип
 
-`hbs-wrap` - добавляет форме перенос(по-дефолту без переноса)
+`mphbs-wrap` - добавляет форме перенос(по-дефолту без переноса)
 
-`hbs-fluid-button` - "тянет" кнопку на всю доступную ширину
+`mphbs-fluid-button` - "тянет" кнопку на всю доступную ширину
 
-`hbs-fw-20, hbs-fw-25, hbs-fw-33, hbs-fw-50, hbs-fw-100` - ширина контролов
+`mphbs-fw-20, mphbs-fw-25, mphbs-fw-33, mphbs-fw-50, mphbs-fw-100` - ширина контролов
 
 `is-direct-booking` - для букинг формы одной комнаты(если включен директ букинг) работает только с классом is-style-horizontal-form
 
