@@ -1,6 +1,6 @@
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form,
 .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form,
-.widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form {
+.mphb_widget_search-form.is-style-horizontal-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,7 @@
 @media (min-width: 768px) {
   .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form,
   .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form,
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form {
+  .mphb_widget_search-form.is-style-horizontal-form {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
@@ -23,7 +23,7 @@
 
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form > p,
 .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p,
-.widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form > p {
+.mphb_widget_search-form.is-style-horizontal-form > p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-box-flex: 1;
@@ -38,7 +38,7 @@
 @media (min-width: 768px) {
   .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form > p,
   .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p,
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form > p {
+  .mphb_widget_search-form.is-style-horizontal-form > p {
     padding: 0 10px;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -51,8 +51,8 @@
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form > p select,
 .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p input,
 .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p select,
-.widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form > p input,
-.widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form > p select {
+.mphb_widget_search-form.is-style-horizontal-form > p input,
+.mphb_widget_search-form.is-style-horizontal-form > p select {
   width: 100%;
   margin: 0;
   display: block;
@@ -60,19 +60,19 @@
 
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form .mphb_sc_search-submit-button-wrapper,
 .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper,
-.widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form .mphb_sc_search-submit-button-wrapper {
+.mphb_widget_search-form.is-style-horizontal-form .mphb_sc_search-submit-button-wrapper {
   margin-top: 0;
 }
 
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form .mphb-required-fields-tip,
 .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form .mphb-required-fields-tip,
-.widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form .mphb-required-fields-tip {
+.mphb_widget_search-form.is-style-horizontal-form .mphb-required-fields-tip {
   display: none;
 }
 
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form .button,
 .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form .button,
-.widget_mphb_search_availability_widget .mphb_widget_search-form.is-style-horizontal-form .button {
+.mphb_widget_search-form.is-style-horizontal-form .button {
   margin: 0;
 }
 
@@ -185,52 +185,52 @@
 }
 
 @media (min-width: 768px) {
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-wrap {
+  .mphb_widget_search-form.hbs-wrap {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) {
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-fw-20 > p {
+  .mphb_widget_search-form.hbs-fw-20 > p {
     width: 100%;
     max-width: 20%;
   }
 }
 
 @media (min-width: 768px) {
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-fw-25 > p {
+  .mphb_widget_search-form.hbs-fw-25 > p {
     width: 100%;
     max-width: 25%;
   }
 }
 
 @media (min-width: 768px) {
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-fw-33 > p {
+  .mphb_widget_search-form.hbs-fw-33 > p {
     width: 100%;
     max-width: 33.33%;
   }
 }
 
 @media (min-width: 768px) {
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-fw-50 > p {
+  .mphb_widget_search-form.hbs-fw-50 > p {
     width: 100%;
     max-width: 50%;
   }
 }
 
 @media (min-width: 768px) {
-  .widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-fw-100 > p {
+  .mphb_widget_search-form.hbs-fw-100 > p {
     width: 100%;
     max-width: 100%;
   }
 }
 
-.widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-fluid-button .mphb_widget_search-submit-button-wrapper {
+.mphb_widget_search-form.hbs-fluid-button .mphb_widget_search-submit-button-wrapper {
   max-width: 100%;
   width: auto;
 }
 
-.widget_mphb_search_availability_widget .mphb_widget_search-form.hbs-fluid-button .mphb_widget_search-submit-button-wrapper .button {
+.mphb_widget_search-form.hbs-fluid-button .mphb_widget_search-submit-button-wrapper .button {
   width: 100%;
 }
