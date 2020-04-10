@@ -5,6 +5,10 @@ use MPHB\Admin\Groups\SettingsGroup;
 use MPHB\Admin\Tabs\SettingsSubTab;
 use MPHB\Admin\Tabs\SettingsTab;
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 add_action('mphb_generate_extension_settings', '_mphb_add_extension_settings_tab');
 
 /**
@@ -28,25 +32,25 @@ function _mphb_add_extension_settings_tab($tab)
         FieldFactory::create('mphbs_hide_labels', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-hide-labels',
-            'default'     => esc_html__('Removes all labels from the form.', 'mphb-styles'),
+            'default'     => esc_html__('Remove all labels from the form.', 'mphb-styles'),
             'description' => esc_html__('Available for Availability Search Form and Booking Form.', 'mphb-styles')
         ]),
         FieldFactory::create('mphbs_no_paddings', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-no-paddings',
-            'default'     => esc_html__('Removes paddings between form elements.', 'mphb-styles'),
+            'default'     => esc_html__('Remove paddings between form elements.', 'mphb-styles'),
             'description' => esc_html__('Available for Availability Search Form and Booking Form.', 'mphb-styles')
         ]),
         FieldFactory::create('mphbs_hide_tips', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-hide-rf-tip',
-            'default'     => esc_html__('Hides the tip "Required fields are followed by *". Applied automaticaly on the horizontal form.', 'mphb-styles'),
+            'default'     => esc_html__('Hide the tip "Required fields are followed by *". Applied automaticaly on the horizontal form.', 'mphb-styles'),
             'description' => esc_html__('Available for Availability Search Form and Booking Form.', 'mphb-styles')
         ]),
         FieldFactory::create('mphbs_wrap', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-wrap',
-            'default'     => esc_html__('Adds elements wrap.', 'mphb-styles'),
+            'default'     => esc_html__('Add elements wrap.', 'mphb-styles'),
             'description' => esc_html__('Available for Availability Search Form and Search Availability Widget.', 'mphb-styles')
         ]),
         FieldFactory::create('mphbs_fluid_button', [
@@ -58,7 +62,7 @@ function _mphb_add_extension_settings_tab($tab)
         FieldFactory::create('mphbs_columns', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-fw-*',
-            'default'     => wp_kses(__('<code>mphbs-fw-20</code>, <code>mphbs-fw-25</code>, <code>mphbs-fw-33</code>, <code>mphbs-fw-50</code>, <code>mphbs-fw-100</code><br>Limits the maximum width of the form elements. Has no effect on the horizontal form.', 'mphb-styles'), ['code' => [], 'br' => []]),
+            'default'     => wp_kses(__('<code>mphbs-fw-20</code>, <code>mphbs-fw-25</code>, <code>mphbs-fw-33</code>, <code>mphbs-fw-50</code>, <code>mphbs-fw-100</code><br>Limit the maximum width of the form elements. Has no effect on the horizontal form.', 'mphb-styles'), ['code' => [], 'br' => []]),
             'description' => esc_html__('Available for Availability Search Form and Search Availability Widget.', 'mphb-styles')
         ])
     ];

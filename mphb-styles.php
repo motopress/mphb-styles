@@ -16,23 +16,10 @@ if (!defined('ABSPATH')) {
 
 if (!defined('MPHB\Styles\VERSION')) {
     define('MPHB\Styles\VERSION', '0.0.1');
+    define('MPHB\Styles\PLUGIN_URL', plugin_dir_url(__FILE__)); // With trailing slash
 
+    include 'includes/functions.php';
+    include 'includes/filters.php';
+    include 'includes/scripts.php';
     include 'includes/settings-tab.php';
-
-    add_action('wp_enqueue_scripts', 'mphbs_enqueue_scripts');
-    function mphbs_enqueue_scripts(){
-
-        wp_enqueue_style('mphbs-style', plugins_url('/style.css', __FILE__), [], MPHB\Styles\VERSION);
-
-    }
-
-    add_filter('mphb_sc_booking_form_wrapper_classes', 'mphbs_filter_booking_form_classes');
-    function mphbs_filter_booking_form_classes($class){
-
-        if(MPHB()->settings()->main()->isDirectBooking()){
-            return $class.' is-direct-booking';
-        }
-
-        return $class;
-    }
 }
