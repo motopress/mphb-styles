@@ -107,7 +107,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 ToggleControl,
                                 {
                                     label: __('Hide Labels', 'mphb-styles'),
-                                    help: __('Remove all labels from the form.', 'mphb-styles'),
+                                    help: __('Remove all labels from the form fields.', 'mphb-styles'),
                                     checked: hideLabels,
                                     onChange: function (value) {
                                         setAttributes({hide_labels: value});
@@ -119,7 +119,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 ToggleControl,
                                 {
                                     label: __('No Paddings', 'mphb-styles'),
-                                    help: __('Remove paddings between form elements.', 'mphb-styles'),
+                                    help: __('Remove paddings between the form elements.', 'mphb-styles'),
                                     checked: noPaddings,
                                     onChange: function (value) {
                                         setAttributes({no_paddings: value});
@@ -131,7 +131,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 ToggleControl,
                                 {
                                     label: __('Hide Tips', 'mphb-styles'),
-                                    help: __('Hide the tip "Required fields are followed by *". Applied automaticaly on the horizontal form.', 'mphb-styles'),
+                                    help: __('Hide the "Required fields are followed by *" indication. Applied automatically on the horizontal form.', 'mphb-styles'),
                                     checked: hideTips,
                                     onChange: function (value) {
                                         setAttributes({hide_tips: value});
@@ -143,7 +143,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 ToggleControl,
                                 {
                                     label: __('Elements Wrap', 'mphb-styles'),
-                                    help: __('Add elements wrap.', 'mphb-styles'),
+                                    help: __('Add elements wrap (breaking long forms into lines).', 'mphb-styles'),
                                     checked: enableWrap,
                                     onChange: function (value) {
                                         setAttributes({enable_wrap: value});
@@ -171,11 +171,11 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                     value: fieldsWidth,
                                     options: [
                                         {value: 'auto', label: __('Auto', 'mphb-styles')},
-                                        {value: '20',   label: __('20%', 'mphb-styles')},
-                                        {value: '25',   label: __('25%', 'mphb-styles')},
-                                        {value: '33',   label: __('33%', 'mphb-styles')},
-                                        {value: '50',   label: __('50%', 'mphb-styles')},
-                                        {value: '100',  label: __('100%', 'mphb-styles')}
+                                        {value: '20',   label: '20%'},
+                                        {value: '25',   label: '25%'},
+                                        {value: '33',   label: '33%'},
+                                        {value: '50',   label: '50%'},
+                                        {value: '100',  label: '100%'}
                                     ],
                                     onChange: function (value) {
                                         setAttributes({fields_width: value});

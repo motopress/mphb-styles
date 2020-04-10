@@ -1,3 +1,5 @@
 /.idea
 /node_modules
 /nbproject
+/languages/wp-cli*.phar
+/languages/*.bat

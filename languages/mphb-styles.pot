@@ -1,0 +1,142 @@
+# Copyright (C) 2020 MotoPress
+# This file is distributed under the same license as the Hotel Booking Styles plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hotel Booking Styles 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mphb-styles\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-10T19:24:37+03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: mphb-styles\n"
+
+#. Plugin Name of the plugin
+msgid "Hotel Booking Styles"
+msgstr ""
+
+#. Description of the plugin
+msgid "Manage your hotel booking styles."
+msgstr ""
+
+#. Author of the plugin
+msgid "MotoPress"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://motopress.com/"
+msgstr ""
+
+#: includes/settings-tab.php:21
+msgid "Styles"
+msgstr ""
+
+#: includes/settings-tab.php:23
+msgid "Use spaces to add several classes. Example of using styles with shortcodes: <code>[mphb_availability_search class=\"is-style-horizontal-form\"]</code>."
+msgstr ""
+
+#: includes/settings-tab.php:29
+msgid "Makes the form horizontal."
+msgstr ""
+
+#: includes/settings-tab.php:30
+msgid "Available for Availability Search Form, Booking Form and Search Availability Widget."
+msgstr ""
+
+#: includes/settings-tab.php:35
+msgid "Removes all labels from the form fields."
+msgstr ""
+
+#: includes/settings-tab.php:36
+#: includes/settings-tab.php:42
+#: includes/settings-tab.php:48
+msgid "Available for Availability Search Form and Booking Form."
+msgstr ""
+
+#: includes/settings-tab.php:41
+msgid "Removes paddings between the form elements."
+msgstr ""
+
+#: includes/settings-tab.php:47
+msgid "Hides the \"Required fields are followed by *\" indication. Applied automatically on the horizontal form."
+msgstr ""
+
+#: includes/settings-tab.php:53
+msgid "Adds elements wrap (breaking long forms into lines)."
+msgstr ""
+
+#: includes/settings-tab.php:54
+#: includes/settings-tab.php:60
+#: includes/settings-tab.php:66
+msgid "Available for Availability Search Form and Search Availability Widget."
+msgstr ""
+
+#: includes/settings-tab.php:59
+msgid "Stretches the button to the maximum available width."
+msgstr ""
+
+#: includes/settings-tab.php:65
+msgid "<code>mphbs-fw-20</code>, <code>mphbs-fw-25</code>, <code>mphbs-fw-33</code>, <code>mphbs-fw-50</code>, <code>mphbs-fw-100</code><br>Limits the maximum width of the form elements. Has no effect on the horizontal form."
+msgstr ""
+
+#: assets/js/extend-block-styles.js:6
+#: assets/js/extend-block-styles.js:11
+#: assets/js/extend-blocks.js:17
+#: assets/js/extend-blocks.js:22
+msgid "Horizontal Form"
+msgstr ""
+
+#: assets/js/extend-blocks.js:109
+msgid "Hide Labels"
+msgstr ""
+
+#: assets/js/extend-blocks.js:110
+msgid "Remove all labels from the form fields."
+msgstr ""
+
+#: assets/js/extend-blocks.js:121
+msgid "No Paddings"
+msgstr ""
+
+#: assets/js/extend-blocks.js:122
+msgid "Remove paddings between the form elements."
+msgstr ""
+
+#: assets/js/extend-blocks.js:133
+msgid "Hide Tips"
+msgstr ""
+
+#: assets/js/extend-blocks.js:134
+msgid "Hide the \"Required fields are followed by *\" indication. Applied automatically on the horizontal form."
+msgstr ""
+
+#: assets/js/extend-blocks.js:145
+msgid "Elements Wrap"
+msgstr ""
+
+#: assets/js/extend-blocks.js:146
+msgid "Add elements wrap (breaking long forms into lines)."
+msgstr ""
+
+#: assets/js/extend-blocks.js:157
+msgid "Fluid Button"
+msgstr ""
+
+#: assets/js/extend-blocks.js:158
+msgid "Stretch the button to the maximum available width."
+msgstr ""
+
+#: assets/js/extend-blocks.js:169
+msgid "Fields Width"
+msgstr ""
+
+#: assets/js/extend-blocks.js:170
+msgid "Limit the maximum width of the form elements. Has no effect on the horizontal form."
+msgstr ""
+
+#: assets/js/extend-blocks.js:173
+msgid "Auto"
+msgstr ""
