@@ -1,13 +1,15 @@
 <?php
+
 /*
  * Plugin Name: Hotel Booking Styles
- * Description: Manage your hotel booking styles.
+ * Description: Extra CSS styles to customize the MotoPress WordPress Hotel Booking plugin forms and widgets.
  * Version: 0.0.1
  * Author: MotoPress
  * Author URI: https://motopress.com/
  * License: GPLv2 or later
  * Text Domain: mphb-styles
  * Domain Path: /languages
+ * Requires Hotel Booking: 3.0.3
  */
 
 if (!defined('ABSPATH')) {
