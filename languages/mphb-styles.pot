@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-04-10T19:24:37+03:00\n"
+"POT-Creation-Date: 2020-04-13T20:51:06+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.3.0\n"
 "X-Domain: mphb-styles\n"
@@ -19,7 +19,7 @@ msgid "Hotel Booking Styles"
 msgstr ""
 
 #. Description of the plugin
-msgid "Manage your hotel booking styles."
+msgid "Extra CSS styles to customize the MotoPress WordPress Hotel Booking plugin forms and widgets."
 msgstr ""
 
 #. Author of the plugin
@@ -28,6 +28,26 @@ msgstr ""
 
 #. Author URI of the plugin
 msgid "https://motopress.com/"
+msgstr ""
+
+#: includes/filters.php:131
+#: assets/js/extend-blocks.js:173
+msgid "Auto"
+msgstr ""
+
+#: includes/filters.php:142
+#: assets/js/extend-blocks.js:145
+msgid "Elements Wrap"
+msgstr ""
+
+#: includes/filters.php:146
+#: assets/js/extend-blocks.js:157
+msgid "Fluid Button"
+msgstr ""
+
+#: includes/filters.php:149
+#: assets/js/extend-blocks.js:169
+msgid "Fields Width"
 msgstr ""
 
 #: includes/settings-tab.php:21
@@ -113,30 +133,14 @@ msgstr ""
 msgid "Hide the \"Required fields are followed by *\" indication. Applied automatically on the horizontal form."
 msgstr ""
 
-#: assets/js/extend-blocks.js:145
-msgid "Elements Wrap"
-msgstr ""
-
 #: assets/js/extend-blocks.js:146
 msgid "Add elements wrap (breaking long forms into lines)."
-msgstr ""
-
-#: assets/js/extend-blocks.js:157
-msgid "Fluid Button"
 msgstr ""
 
 #: assets/js/extend-blocks.js:158
 msgid "Stretch the button to the maximum available width."
 msgstr ""
 
-#: assets/js/extend-blocks.js:169
-msgid "Fields Width"
-msgstr ""
-
 #: assets/js/extend-blocks.js:170
 msgid "Limit the maximum width of the form elements. Has no effect on the horizontal form."
-msgstr ""
-
-#: assets/js/extend-blocks.js:173
-msgid "Auto"
 msgstr ""
