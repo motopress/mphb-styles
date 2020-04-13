@@ -4,9 +4,33 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+// Booking Form classes
+add_filter('mphb_sc_booking_form_wrapper_classes', '_mphbs_filter_booking_form_classes');
+
+// Search Availability and Booking Form blocks
 add_filter('mphb_block_attributes', '_mphbs_filter_block_attributes', 10, 2);
 add_filter('mphb_render_block_attributes', '_mphbs_filter_block_classes', 10, 2);
-add_filter('mphb_sc_booking_form_wrapper_classes', '_mphbs_filter_booking_form_classes');
+
+// Search Availability widget
+add_action('mphb_search_availability_widget_after_controls', '_mphbs_add_search_widget_controls', 10, 2);
+add_filter('mphb_search_availability_widget_before_update', '_mphbs_filter_search_widget_update_args', 10, 2);
+add_filter('mphb_search_availability_widget_template_args', '_mphbs_filter_search_widget_template_args', 10, 2);
+add_filter('mphb_widget_search_form_class', '_mphbs_filter_search_widget_classes', 10, 2);
+
+/**
+ * @param string $class
+ * @return string
+ *
+ * @since 0.0.1
+ */
+function _mphbs_filter_booking_form_classes($class)
+{
+    if (MPHB()->settings()->main()->isDirectBooking()) {
+        return $class . ' is-direct-booking';
+    }
+
+    return $class;
+}
 
 /**
  * @param array $attributes
@@ -92,16 +116,127 @@ function _mphbs_filter_block_classes($attributes, $shortcodeName)
 }
 
 /**
- * @param string $class
- * @return string
+ * @param array $args
+ * @param \MPHB\Widgets\BaseWidget $widget
  *
- * @since 0.0.1
+ * @since 0.0.2
  */
-function _mphbs_filter_booking_form_classes($class)
+function _mphbs_add_search_widget_controls($args, $widget)
 {
-    if (MPHB()->settings()->main()->isDirectBooking()) {
-        return $class . ' is-direct-booking';
+    $enableWrap  = isset($args['enable_wrap']) && $args['enable_wrap'];
+    $fluidButton = isset($args['fluid_button']) && $args['fluid_button'];
+    $fieldsWidth = isset($args['fields_width']) ? sanitize_text_field($args['fields_width']) : 'auto';
+
+    $widthVariants = [
+        'auto' => esc_html__('Auto', 'mphb-styles'),
+        '20'   => '20%',
+        '25'   => '25%',
+        '33'   => '33%',
+        '50'   => '50%',
+        '100'  => '100%'
+    ];
+
+    ?>
+    <p>
+        <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>" name="<?php echo esc_attr($widget->get_field_name('enable_wrap')); ?>" <?php checked($enableWrap); ?> style="margin-top: 0;">
+        <label for="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>"><?php esc_html_e('Elements Wrap', 'mphb-styles'); ?></label>
+    </p>
+    <p>
+        <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>" name="<?php echo esc_attr($widget->get_field_name('fluid_button')); ?>" <?php checked($fluidButton); ?> style="margin-top: 0;">
+        <label for="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>"><?php esc_html_e('Fluid Button', 'mphb-styles'); ?></label>
+    </p>
+    <p>
+        <label for="<?php echo esc_attr($widget->get_field_id('fields_width')); ?>"><?php esc_html_e('Fields Width', 'mphb-styles'); ?></label>
+        <select id="<?php echo esc_attr($widget->get_field_id('fields_width')); ?>" name="<?php echo esc_attr($widget->get_field_name('fields_width')); ?>">
+            <?php foreach ($widthVariants as $width => $label) { ?>
+                <option value="<?php echo $width; ?>" <?php selected($fieldsWidth, $width); ?>><?php echo $label; ?></option>
+            <?php } ?>
+        </select>
+    </p>
+    <?php
+}
+
+/**
+ * @param array $values
+ * @param array $newValues
+ * @return array
+ *
+ * @since 0.0.2
+ */
+function _mphbs_filter_search_widget_update_args($values, $newValues)
+{
+    $values = array_merge($values, [
+        'enable_wrap'  => '',
+        'fluid_button' => '',
+        'fields_width' => ''
+    ]);
+
+    if (isset($newValues['enable_wrap']) && $newValues['enable_wrap'] !== '') {
+        $values['enable_wrap'] = (bool)$newValues['enable_wrap'];
     }
 
-    return $class;
+    if (isset($newValues['fluid_button']) && $newValues['fluid_button'] !== '') {
+        $values['fluid_button'] = (bool)$newValues['fluid_button'];
+    }
+
+    if (isset($newValues['fields_width']) && $newValues['fields_width'] !== '') {
+        $fieldsWidth = sanitize_text_field($newValues['fields_width']);
+
+        if (
+            $fieldsWidth === 'auto'
+            || (is_numeric($fieldsWidth) && in_array($fieldsWidth, ['20', '25', '33', '50', '100']))
+        ) {
+            $values['fields_width'] = $fieldsWidth;
+        } else {
+            $values['fields_width'] = 'auto';
+        }
+    }
+
+    return $values;
+}
+
+/**
+ * @param array $tempalteArgs
+ * @param array $widgetArgs
+ * @return array
+ *
+ * @since 0.0.2
+ */
+function _mphbs_filter_search_widget_template_args($tempalteArgs, $widgetArgs)
+{
+    $customClasses = '';
+
+    if (isset($widgetArgs['enable_wrap']) && $widgetArgs['enable_wrap']) {
+        $customClasses .= 'mphbs-wrap';
+    }
+
+    if (isset($widgetArgs['fluid_button']) && $widgetArgs['fluid_button']) {
+        $customClasses .= ' mphbs-fluid-button';
+    }
+
+    if (!empty($widgetArgs['fields_width']) && $widgetArgs['fields_width'] !== 'auto') {
+        $customClasses .= ' mphbs-fw-' . $widgetArgs['fields_width'];
+    }
+
+    if (!empty($customClasses)) {
+        $tempalteArgs['mphbsClasses'] = trim($customClasses);
+    }
+
+    return $tempalteArgs;
+}
+
+/**
+ * @param string $classes
+ * @param array $args
+ * @return string
+ *
+ * @since 0.0.2
+ */
+function _mphbs_filter_search_widget_classes($classes, $args)
+{
+    if (isset($args['mphbsClasses'])) {
+        $classes .= ' ' . $args['mphbsClasses'];
+    }
+
+    return $classes;
 }
