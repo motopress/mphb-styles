@@ -22,12 +22,12 @@ The add-on also works for the [free Hotel Booking](https://wordpress.org/plugins
 
 With the Hotel Booking Styles addon, it’s super easy to take the customization of the WordPress hotel booking plugin further and apply the following changes to your forms:
 
-* Make the property search form horizontal
-* Remove field labels
-* Remove paddings between the form fields
-* Hide the "Required fields are followed by *" indication
-* Apply an automatic form width adjustment (using a wrapper)
-* Stretch the button in the property search form or widget to adjust it to the width of your website container
+* Make the property search form horizontal.
+* Remove field labels.
+* Remove paddings between the form fields.
+* Hide the "Required fields are followed by *" indication.
+* Apply an automatic form width adjustment (using a wrapper).
+* Stretch the button in the property search form or widget to adjust it to the width of your website container.
 * Set custom width for the form fields.
 
 You don’t need any technical background to modify the styles, just copy and paste them to the needed blocks or shortcodes!

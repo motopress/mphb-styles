@@ -146,13 +146,13 @@ function _mphbs_add_search_widget_controls($args, $widget)
     </p>
     <p>
         <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>" name="<?php echo esc_attr($widget->get_field_name('enable_wrap')); ?>" <?php checked($enableWrap); ?> style="margin-top: 0;">
-        <label for="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>"><?php esc_html_e('Elements Wrap', 'mphb-styles'); ?></label>
+        <label for="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>"><?php esc_html_e('Multiple Lines', 'mphb-styles'); ?></label>
         <br>
-        <small><?php _e('Add elements wrap (breaking long forms into lines).', 'mphb-styles'); ?></small>
+        <small><?php _e('Wrap form fields onto multiple lines.', 'mphb-styles'); ?></small>
     </p>
     <p>
         <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>" name="<?php echo esc_attr($widget->get_field_name('fluid_button')); ?>" <?php checked($fluidButton); ?> style="margin-top: 0;">
-        <label for="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>"><?php esc_html_e('Fluid Button', 'mphb-styles'); ?></label>
+        <label for="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>"><?php esc_html_e('Stretch Button', 'mphb-styles'); ?></label>
         <br>
         <small><?php _e('Stretch the button to the maximum available width.', 'mphb-styles'); ?></small>
     </p>
@@ -164,7 +164,7 @@ function _mphbs_add_search_widget_controls($args, $widget)
             <?php } ?>
         </select>
         <br>
-        <small><?php _e('Limit the maximum width of the form elements.', 'mphb-styles'); ?></small>
+        <small><?php _e('Limit the maximum width of the form fields.', 'mphb-styles'); ?></small>
     </p>
     <?php
 }

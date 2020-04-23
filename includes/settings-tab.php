@@ -46,19 +46,19 @@ function _mphb_add_extension_settings_tab($tab)
         FieldFactory::create('mphbs_no_paddings', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-no-paddings',
-            'default'     => esc_html__('Remove paddings between the form elements.', 'mphb-styles'),
+            'default'     => esc_html__('Remove paddings between the form fields.', 'mphb-styles'),
             'description' => esc_html__('Available for Availability Search Form and Booking Form.', 'mphb-styles')
         ]),
         FieldFactory::create('mphbs_hide_tips', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-hide-rf-tip',
-            'default'     => esc_html__('Hide the "Required fields are followed by *" indication. Applied automatically on the horizontal form.', 'mphb-styles'),
+            'default'     => esc_html__('Hide message about required fields. Applied automatically on the horizontal form.', 'mphb-styles'),
             'description' => esc_html__('Available for Availability Search Form and Booking Form.', 'mphb-styles')
         ]),
         FieldFactory::create('mphbs_wrap', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-wrap',
-            'default'     => esc_html__('Add elements wrap (breaking long forms into lines).', 'mphb-styles'),
+            'default'     => esc_html__('Wrap form fields onto multiple lines.', 'mphb-styles'),
             'description' => esc_html__('Available for Availability Search Form and Search Availability Widget.', 'mphb-styles')
         ]),
         FieldFactory::create('mphbs_fluid_button', [
@@ -71,7 +71,7 @@ function _mphb_add_extension_settings_tab($tab)
             'type'        => 'placeholder',
             'label'       => 'mphbs-fw-*',
             'default'     => wp_kses( '<code>mphbs-fw-20</code>, <code>mphbs-fw-25</code>, <code>mphbs-fw-33</code>, <code>mphbs-fw-50</code>, <code>mphbs-fw-100</code><br>' .
-				__('Limits the maximum width of the form elements.', 'mphb-styles'), ['code' => [], 'br' => []]),
+				__('Limit the maximum width of the form fields.', 'mphb-styles'), ['code' => [], 'br' => []]),
             'description' => esc_html__('Available for Availability Search Form and Search Availability Widget.', 'mphb-styles')
         ])
     ];

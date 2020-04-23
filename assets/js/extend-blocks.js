@@ -119,7 +119,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 ToggleControl,
                                 {
                                     label: __('No Paddings', 'mphb-styles'),
-                                    help: __('Remove paddings between the form elements.', 'mphb-styles'),
+                                    help: __('Remove paddings between the form fields.', 'mphb-styles'),
                                     checked: noPaddings,
                                     onChange: function (value) {
                                         setAttributes({no_paddings: value});
@@ -131,7 +131,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 ToggleControl,
                                 {
                                     label: __('Hide Tips', 'mphb-styles'),
-                                    help: __('Hide the "Required fields are followed by *" indication. Applied automatically on the horizontal form.', 'mphb-styles'),
+                                    help: __('Hide message about required fields. Applied automatically on the horizontal form.', 'mphb-styles'),
                                     checked: hideTips,
                                     onChange: function (value) {
                                         setAttributes({hide_tips: value});
@@ -142,8 +142,8 @@ var withCustomBookindStyles = createHOC(function (edit) {
                             isSearch && createElement(
                                 ToggleControl,
                                 {
-                                    label: __('Elements Wrap', 'mphb-styles'),
-                                    help: __('Add elements wrap (breaking long forms into lines).', 'mphb-styles'),
+                                    label: __('Multiple Lines', 'mphb-styles'),
+                                    help: __('Wrap form fields onto multiple lines.', 'mphb-styles'),
                                     checked: enableWrap,
                                     onChange: function (value) {
                                         setAttributes({enable_wrap: value});
@@ -154,7 +154,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                             isSearch && createElement(
                                 ToggleControl,
                                 {
-                                    label: __('Fluid Button', 'mphb-styles'),
+                                    label: __('Stretch Button', 'mphb-styles'),
                                     help: __('Stretch the button to the maximum available width.', 'mphb-styles'),
                                     checked: fluidButton,
                                     onChange: function (value) {
@@ -167,7 +167,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 SelectControl,
                                 {
                                     label: __('Fields Width', 'mphb-styles'),
-                                    help: __('Limit the maximum width of the form elements.', 'mphb-styles'),
+                                    help: __('Limit the maximum width of the form fields.', 'mphb-styles'),
                                     value: fieldsWidth,
                                     options: [
                                         {value: 'auto', label: __('Auto', 'mphb-styles')},
