@@ -60,5 +60,5 @@ Hotel Booking Styles plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
-= 0.0.1, Apr 2 2020 =
+= 1.0.0, Apr 24 2020 =
 * Initial release.
