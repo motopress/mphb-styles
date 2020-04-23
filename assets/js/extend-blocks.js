@@ -167,7 +167,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                 SelectControl,
                                 {
                                     label: __('Fields Width', 'mphb-styles'),
-                                    help: __('Limit the maximum width of the form elements. Has no effect on the horizontal form.', 'mphb-styles'),
+                                    help: __('Limit the maximum width of the form elements.', 'mphb-styles'),
                                     value: fieldsWidth,
                                     options: [
                                         {value: 'auto', label: __('Auto', 'mphb-styles')},

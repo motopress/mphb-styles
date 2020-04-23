@@ -62,7 +62,7 @@ function _mphb_add_extension_settings_tab($tab)
         FieldFactory::create('mphbs_columns', [
             'type'        => 'placeholder',
             'label'       => 'mphbs-fw-*',
-            'default'     => wp_kses(__('<code>mphbs-fw-20</code>, <code>mphbs-fw-25</code>, <code>mphbs-fw-33</code>, <code>mphbs-fw-50</code>, <code>mphbs-fw-100</code><br>Limits the maximum width of the form elements. Has no effect on the horizontal form.', 'mphb-styles'), ['code' => [], 'br' => []]),
+            'default'     => wp_kses(__('<code>mphbs-fw-20</code>, <code>mphbs-fw-25</code>, <code>mphbs-fw-33</code>, <code>mphbs-fw-50</code>, <code>mphbs-fw-100</code><br>Limits the maximum width of the form elements.', 'mphb-styles'), ['code' => [], 'br' => []]),
             'description' => esc_html__('Available for Availability Search Form and Search Availability Widget.', 'mphb-styles')
         ])
     ];
