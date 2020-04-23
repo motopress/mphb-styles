@@ -123,9 +123,10 @@ function _mphbs_filter_block_classes($attributes, $shortcodeName)
  */
 function _mphbs_add_search_widget_controls($args, $widget)
 {
-    $enableWrap  = isset($args['enable_wrap']) && $args['enable_wrap'];
-    $fluidButton = isset($args['fluid_button']) && $args['fluid_button'];
-    $fieldsWidth = isset($args['fields_width']) ? sanitize_text_field($args['fields_width']) : 'auto';
+    $horizontalForm = isset($args['horizontal_form']) && $args['horizontal_form'];
+    $enableWrap     = isset($args['enable_wrap'])     && $args['enable_wrap'];
+    $fluidButton    = isset($args['fluid_button'])    && $args['fluid_button'];
+    $fieldsWidth    = isset($args['fields_width']) ? sanitize_text_field($args['fields_width']) : 'auto';
 
     $widthVariants = [
         'auto' => esc_html__('Auto', 'mphb-styles'),
@@ -138,12 +139,22 @@ function _mphbs_add_search_widget_controls($args, $widget)
 
     ?>
     <p>
+        <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('horizontal_form')); ?>" name="<?php echo esc_attr($widget->get_field_name('horizontal_form')); ?>" <?php checked($horizontalForm); ?> style="margin-top: 0;">
+        <label for="<?php echo esc_attr($widget->get_field_id('horizontal_form')); ?>"><?php esc_html_e('Horizontal Form', 'mphb-styles'); ?></label>
+        <br>
+        <small><?php _e('Make the form horizontal.', 'mphb-styles'); ?></small>
+    </p>
+    <p>
         <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>" name="<?php echo esc_attr($widget->get_field_name('enable_wrap')); ?>" <?php checked($enableWrap); ?> style="margin-top: 0;">
         <label for="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>"><?php esc_html_e('Elements Wrap', 'mphb-styles'); ?></label>
+        <br>
+        <small><?php _e('Add elements wrap (breaking long forms into lines).', 'mphb-styles'); ?></small>
     </p>
     <p>
         <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>" name="<?php echo esc_attr($widget->get_field_name('fluid_button')); ?>" <?php checked($fluidButton); ?> style="margin-top: 0;">
         <label for="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>"><?php esc_html_e('Fluid Button', 'mphb-styles'); ?></label>
+        <br>
+        <small><?php _e('Stretch the button to the maximum available width.', 'mphb-styles'); ?></small>
     </p>
     <p>
         <label for="<?php echo esc_attr($widget->get_field_id('fields_width')); ?>"><?php esc_html_e('Fields Width', 'mphb-styles'); ?></label>
@@ -152,6 +163,8 @@ function _mphbs_add_search_widget_controls($args, $widget)
                 <option value="<?php echo $width; ?>" <?php selected($fieldsWidth, $width); ?>><?php echo $label; ?></option>
             <?php } ?>
         </select>
+        <br>
+        <small><?php _e('Limit the maximum width of the form elements.', 'mphb-styles'); ?></small>
     </p>
     <?php
 }
@@ -166,10 +179,15 @@ function _mphbs_add_search_widget_controls($args, $widget)
 function _mphbs_filter_search_widget_update_args($values, $newValues)
 {
     $values = array_merge($values, [
-        'enable_wrap'  => '',
-        'fluid_button' => '',
-        'fields_width' => ''
+        'horizontal_form' => '',
+        'enable_wrap'     => '',
+        'fluid_button'    => '',
+        'fields_width'    => ''
     ]);
+
+    if (isset($newValues['horizontal_form']) && $newValues['horizontal_form'] !== '') {
+        $values['horizontal_form'] = (bool)$newValues['horizontal_form'];
+    }
 
     if (isset($newValues['enable_wrap']) && $newValues['enable_wrap'] !== '') {
         $values['enable_wrap'] = (bool)$newValues['enable_wrap'];
@@ -206,8 +224,12 @@ function _mphbs_filter_search_widget_template_args($tempalteArgs, $widgetArgs)
 {
     $customClasses = '';
 
+    if (isset($widgetArgs['horizontal_form']) && $widgetArgs['horizontal_form']) {
+        $customClasses .= 'is-style-horizontal-form';
+    }
+
     if (isset($widgetArgs['enable_wrap']) && $widgetArgs['enable_wrap']) {
-        $customClasses .= 'mphbs-wrap';
+        $customClasses .= ' mphbs-wrap';
     }
 
     if (isset($widgetArgs['fluid_button']) && $widgetArgs['fluid_button']) {

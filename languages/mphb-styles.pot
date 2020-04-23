@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-04-13T20:55:19+03:00\n"
+"POT-Creation-Date: 2020-04-23T10:43:06+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.3.0\n"
 "X-Domain: mphb-styles\n"
@@ -30,24 +30,50 @@ msgstr ""
 msgid "https://motopress.com/"
 msgstr ""
 
-#: includes/filters.php:131
+#: includes/filters.php:132
 #: assets/js/extend-blocks.js:173
 msgid "Auto"
 msgstr ""
 
-#: includes/filters.php:142
+#: includes/filters.php:143
+#: assets/js/extend-block-styles.js:6
+#: assets/js/extend-block-styles.js:11
+#: assets/js/extend-blocks.js:17
+#: assets/js/extend-blocks.js:22
+msgid "Horizontal Form"
+msgstr ""
+
+#: includes/filters.php:145
+msgid "Make the form horizontal."
+msgstr ""
+
+#: includes/filters.php:149
 #: assets/js/extend-blocks.js:145
 msgid "Elements Wrap"
 msgstr ""
 
-#: includes/filters.php:146
+#: includes/filters.php:151
+#: assets/js/extend-blocks.js:146
+msgid "Add elements wrap (breaking long forms into lines)."
+msgstr ""
+
+#: includes/filters.php:155
 #: assets/js/extend-blocks.js:157
 msgid "Fluid Button"
 msgstr ""
 
-#: includes/filters.php:149
+#: includes/filters.php:157
+#: assets/js/extend-blocks.js:158
+msgid "Stretch the button to the maximum available width."
+msgstr ""
+
+#: includes/filters.php:160
 #: assets/js/extend-blocks.js:169
 msgid "Fields Width"
+msgstr ""
+
+#: includes/filters.php:167
+msgid "Limit the maximum width of the form elements."
 msgstr ""
 
 #: includes/settings-tab.php:21
@@ -102,13 +128,6 @@ msgstr ""
 msgid "<code>mphbs-fw-20</code>, <code>mphbs-fw-25</code>, <code>mphbs-fw-33</code>, <code>mphbs-fw-50</code>, <code>mphbs-fw-100</code><br>Limits the maximum width of the form elements. Has no effect on the horizontal form."
 msgstr ""
 
-#: assets/js/extend-block-styles.js:6
-#: assets/js/extend-block-styles.js:11
-#: assets/js/extend-blocks.js:17
-#: assets/js/extend-blocks.js:22
-msgid "Horizontal Form"
-msgstr ""
-
 #: assets/js/extend-blocks.js:109
 msgid "Hide Labels"
 msgstr ""
@@ -131,14 +150,6 @@ msgstr ""
 
 #: assets/js/extend-blocks.js:134
 msgid "Hide the \"Required fields are followed by *\" indication. Applied automatically on the horizontal form."
-msgstr ""
-
-#: assets/js/extend-blocks.js:146
-msgid "Add elements wrap (breaking long forms into lines)."
-msgstr ""
-
-#: assets/js/extend-blocks.js:158
-msgid "Stretch the button to the maximum available width."
 msgstr ""
 
 #: assets/js/extend-blocks.js:170
