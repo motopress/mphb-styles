@@ -112,14 +112,13 @@
 	}
 
 	&.mphbs-fluid-button {
-		.mphb_sc_search-form {
-			.mphb_sc_search-submit-button-wrapper {
-				max-width: 100%;
-				width: auto;
+		.mphb-reserve-btn-wrapper,
+		.mphb_sc_search-submit-button-wrapper {
+			max-width: 100%;
+			width: auto;
 
-				.button {
-					width: 100%;
-				}
+			.button {
+				width: 100%;
 			}
 		}
 	}

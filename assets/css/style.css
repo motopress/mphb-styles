@@ -124,14 +124,18 @@
   }
 }
 
-.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper,
-.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper {
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb-reserve-btn-wrapper,
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-submit-button-wrapper,
+.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb-reserve-btn-wrapper,
+.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb_sc_search-submit-button-wrapper {
   max-width: 100%;
   width: auto;
 }
 
-.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper .button,
-.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper .button {
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb-reserve-btn-wrapper .button,
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-submit-button-wrapper .button,
+.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb-reserve-btn-wrapper .button,
+.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb_sc_search-submit-button-wrapper .button {
   width: 100%;
 }
 

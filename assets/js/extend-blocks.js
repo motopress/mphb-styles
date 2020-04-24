@@ -42,14 +42,14 @@ function _mphbs_add_custom_attributes(settings)
             Object.assign(settings.attributes, {
                 hide_labels: {type: 'boolean', default: false},
                 no_paddings: {type: 'boolean', default: false},
-                hide_tips:   {type: 'boolean', default: false}
+                hide_tips:   {type: 'boolean', default: false},
+                fluid_button: {type: 'boolean', default: false},
+                fields_width: {type: 'string',  default: 'auto'}
             });
 
             if (settings.name == 'motopress-hotel-booking/availability-search') {
                 Object.assign(settings.attributes, {
-                    enable_wrap:  {type: 'boolean', default: false},
-                    fluid_button: {type: 'boolean', default: false},
-                    fields_width: {type: 'string',  default: 'auto'}
+                    enable_wrap:  {type: 'boolean', default: false}
                 });
             }
         }
@@ -151,7 +151,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                     key: 'enable_wrap-control'
                                 }
                             ),
-                            isSearch && createElement(
+                            createElement(
                                 ToggleControl,
                                 {
                                     label: __('Stretch Button', 'mphb-styles'),
@@ -163,7 +163,7 @@ var withCustomBookindStyles = createHOC(function (edit) {
                                     key: 'fluid_button-control'
                                 }
                             ),
-                            isSearch && createElement(
+                            createElement(
                                 SelectControl,
                                 {
                                     label: __('Fields Width', 'mphb-styles'),

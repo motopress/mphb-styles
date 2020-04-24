@@ -45,11 +45,11 @@ function _mphbs_filter_block_attributes($attributes, $blockName)
         $attributes['hide_labels'] = ['type' => 'boolean', 'default' => false];
         $attributes['no_paddings'] = ['type' => 'boolean', 'default' => false];
         $attributes['hide_tips']   = ['type' => 'boolean', 'default' => false];
+        $attributes['fluid_button'] = ['type' => 'boolean', 'default' => false];
+        $attributes['fields_width'] = ['type' => 'string',  'default' => 'auto'];
 
         if ($blockName == 'motopress-hotel-booking/availability-search') {
             $attributes['enable_wrap']  = ['type' => 'boolean', 'default' => false];
-            $attributes['fluid_button'] = ['type' => 'boolean', 'default' => false];
-            $attributes['fields_width'] = ['type' => 'string',  'default' => 'auto'];
         }
     }
 
