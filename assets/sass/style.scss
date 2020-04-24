@@ -1,7 +1,7 @@
 @import "mixins";
 
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form,
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form,
+.mphb_sc_search-wrapper.is-style-horizontal-form form,
 .mphb_widget_search-form.is-style-horizontal-form {
 	display: flex;
 	flex-wrap: wrap;
@@ -11,7 +11,7 @@
 		flex-wrap: nowrap;
 	}
 
-	> p {
+	> * {
 		box-sizing: border-box;
 		flex: 1 0 auto;
 		width: 100%;
@@ -46,9 +46,10 @@
 	}
 }
 
-.mphb_sc_search-wrapper {
+.mphb_sc_search-wrapper,
+.mphb_sc_booking_form-wrapper {
 	&.mphbs-wrap {
-		.mphb_sc_search-form {
+		form {
 			@include respond-to(sm) {
 				flex-wrap: wrap;
 			}
@@ -56,7 +57,7 @@
 	}
 
 	&.mphbs-fw-20 {
-		.mphb_sc_search-form {
+		form {
 			> p {
 				@include respond-to(sm) {
 					width: 100%;
@@ -67,7 +68,7 @@
 	}
 
 	&.mphbs-fw-25 {
-		.mphb_sc_search-form {
+		form {
 			> p {
 				@include respond-to(sm) {
 					width: 100%;
@@ -78,7 +79,7 @@
 	}
 
 	&.mphbs-fw-33 {
-		.mphb_sc_search-form {
+		form {
 			> p {
 				@include respond-to(sm) {
 					width: 100%;
@@ -89,7 +90,7 @@
 	}
 
 	&.mphbs-fw-50 {
-		.mphb_sc_search-form {
+		form {
 			> p {
 				@include respond-to(sm) {
 					width: 100%;
@@ -100,7 +101,7 @@
 	}
 
 	&.mphbs-fw-100 {
-		.mphb_sc_search-form {
+		form {
 			> p {
 				@include respond-to(sm) {
 					width: 100%;
@@ -126,6 +127,10 @@
 
 .mphb_sc_booking_form-wrapper {
 	&.is-style-horizontal-form {
+		.mphb-reserve-btn-wrapper {
+			margin-top: 0;
+		}
+
 		&.is-direct-booking {
 			.mphb-booking-form {
 				flex-wrap: wrap;
@@ -134,13 +139,6 @@
 					&.mphb-reserve-room-section {
 						width: 100%;
 					}
-				}
-			}
-
-			.mphb-reserve-room-section,
-			.mphb-errors-wrapper {
-				@include respond-to(sm) {
-					padding: 0 10px;
 				}
 			}
 
@@ -181,10 +179,10 @@
 	}
 
 	&.mphbs-no-paddings {
-		.mphb_sc_search-form {
+		form {
 			margin: 0;
 
-			> p {
+			> * {
 				padding: 0
 			}
 		}

@@ -1,5 +1,5 @@
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form,
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form,
+.mphb_sc_search-wrapper.is-style-horizontal-form form,
 .mphb_widget_search-form.is-style-horizontal-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,8 +9,8 @@
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form,
-  .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form,
+  .mphb_sc_booking_form-wrapper.is-style-horizontal-form form,
+  .mphb_sc_search-wrapper.is-style-horizontal-form form,
   .mphb_widget_search-form.is-style-horizontal-form {
     -webkit-box-align: end;
     -ms-flex-align: end;
@@ -21,9 +21,9 @@
   }
 }
 
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form > p,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p,
-.mphb_widget_search-form.is-style-horizontal-form > p {
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form > *,
+.mphb_sc_search-wrapper.is-style-horizontal-form form > *,
+.mphb_widget_search-form.is-style-horizontal-form > * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-box-flex: 1;
@@ -36,9 +36,9 @@
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form > p,
-  .mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p,
-  .mphb_widget_search-form.is-style-horizontal-form > p {
+  .mphb_sc_booking_form-wrapper.is-style-horizontal-form form > *,
+  .mphb_sc_search-wrapper.is-style-horizontal-form form > *,
+  .mphb_widget_search-form.is-style-horizontal-form > * {
     padding: 0 10px;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -47,84 +47,96 @@
   }
 }
 
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form > p input,
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form > p select,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p input,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form > p select,
-.mphb_widget_search-form.is-style-horizontal-form > p input,
-.mphb_widget_search-form.is-style-horizontal-form > p select {
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form > * input,
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form > * select,
+.mphb_sc_search-wrapper.is-style-horizontal-form form > * input,
+.mphb_sc_search-wrapper.is-style-horizontal-form form > * select,
+.mphb_widget_search-form.is-style-horizontal-form > * input,
+.mphb_widget_search-form.is-style-horizontal-form > * select {
   width: 100%;
   margin: 0;
   display: block;
 }
 
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form .mphb_sc_search-submit-button-wrapper,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper,
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form .mphb_sc_search-submit-button-wrapper,
+.mphb_sc_search-wrapper.is-style-horizontal-form form .mphb_sc_search-submit-button-wrapper,
 .mphb_widget_search-form.is-style-horizontal-form .mphb_sc_search-submit-button-wrapper {
   margin-top: 0;
 }
 
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form .mphb-required-fields-tip,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form .mphb-required-fields-tip,
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form .mphb-required-fields-tip,
+.mphb_sc_search-wrapper.is-style-horizontal-form form .mphb-required-fields-tip,
 .mphb_widget_search-form.is-style-horizontal-form .mphb-required-fields-tip {
   display: none;
 }
 
-.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-booking-form .button,
-.mphb_sc_search-wrapper.is-style-horizontal-form .mphb_sc_search-form .button,
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form form .button,
+.mphb_sc_search-wrapper.is-style-horizontal-form form .button,
 .mphb_widget_search-form.is-style-horizontal-form .button {
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.mphbs-wrap .mphb_sc_search-form {
+  .mphb_sc_search-wrapper.mphbs-wrap form,
+  .mphb_sc_booking_form-wrapper.mphbs-wrap form {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.mphbs-fw-20 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-20 form > p,
+  .mphb_sc_booking_form-wrapper.mphbs-fw-20 form > p {
     width: 100%;
     max-width: 20%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.mphbs-fw-25 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-25 form > p,
+  .mphb_sc_booking_form-wrapper.mphbs-fw-25 form > p {
     width: 100%;
     max-width: 25%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.mphbs-fw-33 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-33 form > p,
+  .mphb_sc_booking_form-wrapper.mphbs-fw-33 form > p {
     width: 100%;
     max-width: 33.33%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.mphbs-fw-50 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-50 form > p,
+  .mphb_sc_booking_form-wrapper.mphbs-fw-50 form > p {
     width: 100%;
     max-width: 50%;
   }
 }
 
 @media (min-width: 768px) {
-  .mphb_sc_search-wrapper.mphbs-fw-100 .mphb_sc_search-form > p {
+  .mphb_sc_search-wrapper.mphbs-fw-100 form > p,
+  .mphb_sc_booking_form-wrapper.mphbs-fw-100 form > p {
     width: 100%;
     max-width: 100%;
   }
 }
 
-.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper {
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper,
+.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper {
   max-width: 100%;
   width: auto;
 }
 
-.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper .button {
+.mphb_sc_search-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper .button,
+.mphb_sc_booking_form-wrapper.mphbs-fluid-button .mphb_sc_search-form .mphb_sc_search-submit-button-wrapper .button {
   width: 100%;
+}
+
+.mphb_sc_booking_form-wrapper.is-style-horizontal-form .mphb-reserve-btn-wrapper {
+  margin-top: 0;
 }
 
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form.is-direct-booking .mphb-booking-form {
@@ -134,13 +146,6 @@
 
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form.is-direct-booking .mphb-booking-form > *.mphb-reserve-room-section {
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .mphb_sc_booking_form-wrapper.is-style-horizontal-form.is-direct-booking .mphb-reserve-room-section,
-  .mphb_sc_booking_form-wrapper.is-style-horizontal-form.is-direct-booking .mphb-errors-wrapper {
-    padding: 0 10px;
-  }
 }
 
 .mphb_sc_booking_form-wrapper.is-style-horizontal-form.is-direct-booking .mphb-reserve-btn-wrapper {
@@ -174,13 +179,13 @@
   display: none;
 }
 
-.mphb_sc_booking_form-wrapper.mphbs-no-paddings .mphb_sc_search-form,
-.mphb_sc_search-wrapper.mphbs-no-paddings .mphb_sc_search-form {
+.mphb_sc_booking_form-wrapper.mphbs-no-paddings form,
+.mphb_sc_search-wrapper.mphbs-no-paddings form {
   margin: 0;
 }
 
-.mphb_sc_booking_form-wrapper.mphbs-no-paddings .mphb_sc_search-form > p,
-.mphb_sc_search-wrapper.mphbs-no-paddings .mphb_sc_search-form > p {
+.mphb_sc_booking_form-wrapper.mphbs-no-paddings form > *,
+.mphb_sc_search-wrapper.mphbs-no-paddings form > * {
   padding: 0;
 }
 
