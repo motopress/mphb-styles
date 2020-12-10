@@ -18,8 +18,8 @@
 
 **Класс `is-direct-booking` добавляется через фильтр**
 
-# Create a POT file
+## Create a POT file
 1. Install WP-CLI and add to PATH https://wp-cli.org/#installing
-2. Navigate to ./languages
-3. Run `wp i18n make-pot ./..`
+1. Navigate to ./languages
+1. Run `wp i18n make-pot ./..`
 
