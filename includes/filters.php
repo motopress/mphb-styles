@@ -1,5 +1,7 @@
 <?php
 
+use \Elementor\Element_Base;
+
 if (!defined('ABSPATH')) {
     exit;
 }
@@ -16,6 +18,135 @@ add_action('mphb_search_availability_widget_after_controls', '_mphbs_add_search_
 add_filter('mphb_search_availability_widget_before_update', '_mphbs_filter_search_widget_update_args', 10, 2);
 add_filter('mphb_search_availability_widget_template_args', '_mphbs_filter_search_widget_template_args', 10, 2);
 add_filter('mphb_widget_search_form_class', '_mphbs_filter_search_widget_classes', 10, 2);
+
+add_action('elementor/init', '_mphb_elementor_settings_integrations');
+
+function _mphb_check_exists_elementor() {
+    return defined( 'MPHB_ELEMENTOR_PLUGIN_FILE' );
+}
+
+function _mphb_elementor_settings_integrations() {
+    if ( _mphb_check_exists_elementor() ) {
+        add_action( 'elementor/element/mphbe-availability/section_parameters/before_section_end', '_mphbs_elementor_add_params', 10, 2 );
+        add_action( 'elementor/element/mphbe-availability/section_parameters/after_section_end', '_mphbs_elementor_add_section', 10, 2 );
+
+        add_action( 'elementor/element/mphbe-search-form/section_parameters/before_section_end', '_mphbs_elementor_add_params', 10, 2 );
+        add_action( 'elementor/element/mphbe-search-form/section_parameters/after_section_end', '_mphbs_elementor_add_section', 10, 2 );
+    }
+}
+
+function _mphbs_elementor_add_params( Element_Base $element ) {
+
+    $element->start_injection( [
+        'at' => 'after',
+        'of' => 'section_parameters',
+    ] );
+
+        $element->add_control(
+            'widget_styles',
+            [
+                'label'           => __( 'Styles', 'mphb-styles' ),
+                'type'            => \Elementor\Controls_Manager::SELECT,
+                'default'         => 'is-style-default ',
+                'options'         => [
+                    'is-style-default '          => __( 'Default', 'mphb-styles' ),
+                    'is-style-horizontal-form '  => __( 'Horizontal Form', 'mphb-styles' ),
+                ]
+            ]
+        );
+
+    $element->end_injection();
+
+}
+
+function _mphbs_elementor_add_section( Element_Base $element ) {
+    $name_widget = $element->get_name();
+
+    $element->start_controls_section(
+        'section_customization',
+        array(
+            'label' => __( 'Customization', 'mphb-styles' ),
+        )
+    );
+
+        $element->add_control(
+            'hide_labels',
+            [
+                'label'              => __( 'Hide Labels?', 'mphb-styles' ),
+                'type'               => \Elementor\Controls_Manager::SWITCHER,
+                'description'        => __( 'Remove all labels from the form fields.', 'mphb-styles' ),
+                'default'            => 'no',
+                'frontend_available' => true,
+            ]
+        );
+
+        $element->add_control(
+            'no_paddings',
+            [
+                'label'              => __( 'No Paddings', 'mphb-styles' ),
+                'type'               => \Elementor\Controls_Manager::SWITCHER,
+                'description'        => __( 'Remove paddings between the form fields.', 'mphb-styles' ),
+                'default'            => 'no',
+                'frontend_available' => true,
+            ]
+        );
+
+        $element->add_control(
+            'hide_tips',
+            [
+                'label'              => __( 'Hide Tips', 'mphb-styles' ),
+                'type'               => \Elementor\Controls_Manager::SWITCHER,
+                'description'        => __( 'Hide message about required fields. Applied automatically on the horizontal form.', 'mphb-styles' ),
+                'default'            => 'no',
+                'frontend_available' => true,
+            ]
+        );
+
+        if ( $name_widget === 'mphbe-search-form' ) {
+            $element->add_control(
+                'multiple_lines',
+                [
+                    'label'              => __( 'Multiple Lines', 'mphb-styles' ),
+                    'type'               => \Elementor\Controls_Manager::SWITCHER,
+                    'description'        => __( 'Wrap form fields onto multiple lines.', 'mphb-styles' ),
+                    'default'            => 'no',
+                    'frontend_available' => true,
+                ]
+            );
+        }
+
+        $element->add_control(
+            'stretch_btn',
+            [
+                'label'              => __( 'Stretch Button', 'mphb-styles' ),
+                'type'               => \Elementor\Controls_Manager::SWITCHER,
+                'description'        => __( 'Stretch the button to the maximum available width.', 'mphb-styles' ),
+                'default'            => 'no',
+                'frontend_available' => true,
+            ]
+        );
+
+        $element->add_control(
+            'fields_width',
+            [
+                'label'              => __( 'Fields Width', 'mphb-styles' ),
+                'type'               => \Elementor\Controls_Manager::SELECT,
+                'description'        => __( 'Limit the maximum width of the form fields.', 'mphb-styles' ),
+                'default'            => '',
+                'options'            => [
+                    ''              => __( 'Auto', 'mphb-styles' ),
+                    'mphbs-fw-20 '  => __( '20%', 'mphb-styles' ),
+                    'mphbs-fw-25 '  => __( '25%', 'mphb-styles' ),
+                    'mphbs-fw-33 '  => __( '33%', 'mphb-styles' ),
+                    'mphbs-fw-50 '  => __( '50%', 'mphb-styles' ),
+                    'mphbs-fw-100 '  => __( '100%', 'mphb-styles' ),
+                ]
+            ]
+        );
+
+    $element->end_controls_section();
+
+}
 
 /**
  * @param string $class
