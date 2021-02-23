@@ -72,7 +72,7 @@ function _mphbs_elementor_add_section( Element_Base $element ) {
         $element->add_control(
             'hide_labels',
             [
-                'label'              => __( 'Hide Labels?', 'mphb-styles' ),
+                'label'              => __( 'Hide Labels', 'mphb-styles' ),
                 'type'               => \Elementor\Controls_Manager::SWITCHER,
                 'description'        => __( 'Remove all labels from the form fields.', 'mphb-styles' ),
                 'default'            => 'no',

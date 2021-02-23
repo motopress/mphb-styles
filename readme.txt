@@ -1,10 +1,11 @@
 === Hotel Booking Styles ===
 Contributors: motopress
 Donate link: https://motopress.com/
-Tags: motopress hotel booking, hotel booking styles, free hotel booking plugin
+Tags: motopress hotel booking, hotel booking styles, free hotel booking plugin, booking form
 Requires at least: 4.6
 Tested up to: 5.6
 Requires PHP: 5.6
+Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +60,9 @@ Hotel Booking Styles, Copyright (C) 2020, MotoPress https://motopress.com/
 Hotel Booking Styles plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 1.0.1, Feb 24 2021 =
+* Added the ability to set horizontal layout of the Booking and Search Availability forms in the Hotel Booking & Elementor Integration plugin.
 
 = 1.0.0, Apr 24 2020 =
 * Initial release.

@@ -23,3 +23,4 @@
 1. Navigate to ./languages
 1. Run `wp i18n make-pot ./..`
 
+To subtract new strings run `wp i18n make-pot ./.. mphb-styles-new.pot --subtract="mphb-styles.pot"`

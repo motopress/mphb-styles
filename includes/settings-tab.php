@@ -25,6 +25,7 @@ function _mphb_add_extension_settings_tab($tab)
 		esc_html__('Available Classes'),
 		$subtab->getOptionGroupName(),
 		wp_kses(
+			//translators: %s is an example of code
 			sprintf( __('Use spaces to add several classes. Example of using styles with shortcodes: %s.', 'mphb-styles'),
 			'<code>[mphb_availability_search class="is-style-horizontal-form"]</code>'), ['code' => []]
 		)
