@@ -18,8 +18,18 @@
 
 **Класс `is-direct-booking` добавляется через фильтр**
 
+# Формирование релиз версии
+
 ## Create a POT file
 1. Install WP-CLI and add to PATH https://wp-cli.org/#installing
 1. Navigate to ./languages
 1. Run `wp i18n make-pot ./..`
 
+To subtract new strings run `wp i18n make-pot ./.. mphb-styles-new.pot --subtract="mphb-styles.pot"`
+
+## Подготовка
+1. Обновить `Tested up to` в readme.txt
+1. Обновить POT файл
+1. Проверить версию `Version` в mphb-styles.php
+1. Проверить `Changelog` в readme.txt
+1. Обновить версию плагина в `MPHB\Styles\VERSION`
