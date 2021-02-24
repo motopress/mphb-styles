@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('MPHB\Styles\VERSION')) {
-    define('MPHB\Styles\VERSION', '1.0.0');
+    define('MPHB\Styles\VERSION', '1.0.1');
     define('MPHB\Styles\PLUGIN_URL', plugin_dir_url(__FILE__)); // With trailing slash
 
     include 'includes/functions.php';
