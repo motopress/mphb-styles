@@ -16,13 +16,6 @@ var settings = {
     proxy: ''
 }
 
-gulp.task('serve', ['sass'], function () {
-    /**
-     * watch for changes in sass files
-     */
-    gulp.watch("./assets/sass/**/*.scss", ['sass']);
-});
-
 /**
  * sass task, will compile the .SCSS files,
  * and handle the error through plumber and notify through system message.
@@ -45,5 +38,12 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./assets/css/'))
 });
 
-gulp.task('default', ['serve']);
+gulp.task('serve', gulp.series('sass', function () {
+    /**
+     * watch for changes in sass files
+     */
+    gulp.watch("./assets/sass/**/*.scss", gulp.series('sass'));
+}));
+
+gulp.task('default', gulp.series('serve'));
 
