@@ -1,5 +1,12 @@
 # Hotel Booking Styles: Extra Styles for MotoPress Hotel Booking Plugin
 
+![](https://img.shields.io/wordpress/plugin/v/mphb-styles)
+![](https://img.shields.io/wordpress/plugin/wp-version/mphb-styles)
+![](https://img.shields.io/wordpress/plugin/dm/mphb-styles)
+![](https://img.shields.io/wordpress/plugin/installs/mphb-styles)
+![](https://img.shields.io/wordpress/plugin/rating/mphb-styles)
+![](https://img.shields.io/badge/license-GPL--2.0%2B-blue.svg?style=flat)
+
 The Hotel Booking Styles plugin allows you to further customize the styling of the WordPress [MotoPress Hotel Booking plugin](https://motopress.com/products/hotel-booking/). This is a helpful utility if you use the Hotel Booking plugin in the themes other than those by MotoPress.
 
 The plugin ships with a bundle of ready-made CSS classes for tailoring such essentials as the property search form, booking forms, and other shortcodes/blocks sourced by Hotel Booking. Since this is a user-friendly list of styles, the Hotel Booking Styles plugin can be especially beneficial for non-tech users.
