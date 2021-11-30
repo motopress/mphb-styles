@@ -273,29 +273,29 @@ function _mphbs_add_search_widget_controls($args, $widget)
         <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('horizontal_form')); ?>" name="<?php echo esc_attr($widget->get_field_name('horizontal_form')); ?>" <?php checked($horizontalForm); ?> style="margin-top: 0;">
         <label for="<?php echo esc_attr($widget->get_field_id('horizontal_form')); ?>"><?php esc_html_e('Horizontal Form', 'mphb-styles'); ?></label>
         <br>
-        <small><?php _e('Make the form horizontal.', 'mphb-styles'); ?></small>
+        <small><?php esc_html_e('Make the form horizontal.', 'mphb-styles'); ?></small>
     </p>
     <p>
         <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>" name="<?php echo esc_attr($widget->get_field_name('enable_wrap')); ?>" <?php checked($enableWrap); ?> style="margin-top: 0;">
         <label for="<?php echo esc_attr($widget->get_field_id('enable_wrap')); ?>"><?php esc_html_e('Multiple Lines', 'mphb-styles'); ?></label>
         <br>
-        <small><?php _e('Wrap form fields onto multiple lines.', 'mphb-styles'); ?></small>
+        <small><?php esc_html_e('Wrap form fields onto multiple lines.', 'mphb-styles'); ?></small>
     </p>
     <p>
         <input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>" name="<?php echo esc_attr($widget->get_field_name('fluid_button')); ?>" <?php checked($fluidButton); ?> style="margin-top: 0;">
         <label for="<?php echo esc_attr($widget->get_field_id('fluid_button')); ?>"><?php esc_html_e('Stretch Button', 'mphb-styles'); ?></label>
         <br>
-        <small><?php _e('Stretch the button to the maximum available width.', 'mphb-styles'); ?></small>
+        <small><?php esc_html_e('Stretch the button to the maximum available width.', 'mphb-styles'); ?></small>
     </p>
     <p>
         <label for="<?php echo esc_attr($widget->get_field_id('fields_width')); ?>"><?php esc_html_e('Fields Width', 'mphb-styles'); ?></label>
         <select id="<?php echo esc_attr($widget->get_field_id('fields_width')); ?>" name="<?php echo esc_attr($widget->get_field_name('fields_width')); ?>">
             <?php foreach ($widthVariants as $width => $label) { ?>
-                <option value="<?php echo $width; ?>" <?php selected($fieldsWidth, $width); ?>><?php echo $label; ?></option>
+                <option value="<?php echo esc_attr( $width ); ?>" <?php selected($fieldsWidth, $width); ?>><?php echo esc_html( $label ); ?></option>
             <?php } ?>
         </select>
         <br>
-        <small><?php _e('Limit the maximum width of the form fields.', 'mphb-styles'); ?></small>
+        <small><?php esc_html_e('Limit the maximum width of the form fields.', 'mphb-styles'); ?></small>
     </p>
     <?php
 }
