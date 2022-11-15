@@ -31,16 +31,21 @@ class AccommodationTemplate {
             'show_in_menu' => false,
             'show_in_admin_bar' => false,
             'template' => array(
-                array( 'motopress-hotel-booking/wrapper', array(), array(
-                    array( 'motopress-hotel-booking/featured-image', array() ),
-                    array( 'motopress-hotel-booking/title', array() ),
-                    array( 'motopress-hotel-booking/gallery', array() ),
-                    array( 'motopress-hotel-booking/content', array() ),
-                    array( 'motopress-hotel-booking/price', array() ),
-                    array( 'motopress-hotel-booking/attributes', array() ),
-                    array( 'motopress-hotel-booking/availability-calendar', array() ),
-                    array( 'motopress-hotel-booking/availability', array() )
-                ) )
+                array( 'motopress-hotel-booking/wrapper',
+                    array(
+                        'maxWidth' => 600
+                    ),
+                    array(
+                        array( 'motopress-hotel-booking/featured-image', array() ),
+                        array( 'motopress-hotel-booking/title', array() ),
+                        array( 'motopress-hotel-booking/gallery', array() ),
+                        array( 'motopress-hotel-booking/content', array() ),
+                        array( 'motopress-hotel-booking/price', array() ),
+                        array( 'motopress-hotel-booking/attributes', array() ),
+                        array( 'motopress-hotel-booking/availability-calendar', array() ),
+                        array( 'motopress-hotel-booking/availability', array() )
+                    )
+                )
             ),
 		));
     }
@@ -67,7 +72,7 @@ class AccommodationTemplate {
         ?>
         <script type="text/javascript">
             jQuery(function () {
-                var pageDescription = "<?php echo esc_html__('Сhange the default look of your accommodation type pages by creating custom templates.You can apply your templates to the needed accommodation types.', 'mphb-styles'); ?>";
+                var pageDescription = "<?php echo esc_html__('Сhange the look of your accommodation type pages by creating custom templates. You can apply your templates to the chosen properties via Accommodation Type > Template selector.', 'mphb-styles'); ?>";
                 var description = jQuery('<p />', {'html': pageDescription});
 
                 jQuery('#wpbody-content > .wrap > ul.subsubsub').first().before(description);

@@ -9,7 +9,8 @@
   "style": "file:./style-index.css",
   "attributes": {
     "maxWidth": {
-      "type": "string"
+      "type": "string",
+      "default": "600"
     }
   }
 }

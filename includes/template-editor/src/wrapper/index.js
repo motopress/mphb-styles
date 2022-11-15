@@ -21,7 +21,7 @@ registerBlockType( 'motopress-hotel-booking/wrapper', {
                     <PanelBody title={ __( 'Settings', 'mphb-styles' ) }>
                         <TextControl
                             type='number'
-                            label={ __( 'Wrapper width (in pixels)', 'mphb-styles' ) }
+                            label={ __( 'Width', 'mphb-styles' ) }
                             value={ attributes.maxWidth }
                             onChange={ ( value ) => setAttributes( { maxWidth: value } ) }
                         />
