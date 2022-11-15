@@ -55,7 +55,7 @@ You can also create custom templates for the accommodation type pages, which wil
 
 1. To add a new template, go to Accommodation > Templates > Add New > Give it a name.
 2. Click on every block to see its customization panel from the right and make the needed edits. You can optionally change the order of the blocks or even delete unneeded ones.
-3. Once you customized and saved your template, go to Accommodation types > sel ect the one you want to apply a new look to > choose the needed one fr om the Template selector > save the changes.
+3. Once you customized and saved your template, go to Accommodation types > select the one you want to apply a new look to > choose the needed one from the Template selector > save the changes.
 
 If you are looking for a WordPress hotel template powered by Hotel Booking with the perfectly adjusted styling and custom design, check out our library of the [rental property WordPress themes](https://motopress.com/products/category/hotel-rental-wordpress-themes/).
 
@@ -66,8 +66,8 @@ If you are looking for a WordPress hotel template powered by Hotel Booking with 
 
 == Copyright ==
 
-Hotel Booking Styles, Copyright (C) 2020, MotoPress https://motopress.com/
-Hotel Booking Styles plugin is distributed under the terms of the GNU GPL.
+Hotel Booking Styles & Templates, Copyright (C) 2020, MotoPress https://motopress.com/
+Hotel Booking Styles & Templates plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
 
