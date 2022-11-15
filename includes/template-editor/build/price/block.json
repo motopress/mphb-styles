@@ -1,0 +1,13 @@
+{
+  "apiVersion": 2,
+  "title": "Accommodation Type Price",
+  "name": "motopress-hotel-booking/price",
+  "category": "hotel-booking",
+  "icon": "admin-home",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "id": {
+      "type": "string"
+    }
+  }
+}
