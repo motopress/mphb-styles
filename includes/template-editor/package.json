@@ -1,0 +1,16 @@
+{
+    "name": "mphb-templates",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "wp-scripts build",
+        "format": "wp-scripts format",
+        "lint:js": "wp-scripts lint-js",
+        "start": "wp-scripts start"
+    },
+    "author": "MotoPress",
+    "license": "ISC",
+    "devDependencies": {
+        "@wordpress/scripts": "^24.2.0"
+    }
+}

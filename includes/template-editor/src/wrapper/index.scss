@@ -1,0 +1,13 @@
+.wp-block-motopress-hotel-booking-wrapper {
+    min-height: 50px;
+    padding: 20px;
+    @media screen and (min-width: 992px) {
+        padding: 20px 40px;
+    }
+
+    > .block-editor-inner-blocks
+    > .block-editor-block-list__layout
+    > * {
+        max-width: 100%;
+    }
+}

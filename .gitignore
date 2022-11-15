@@ -3,3 +3,4 @@
 /nbproject
 /languages/wp-cli*.phar
 /languages/*.bat
+*.code-workspace

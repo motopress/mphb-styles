@@ -1,0 +1,21 @@
+{
+  "apiVersion": 2,
+  "title": "Accommodation Type Image",
+  "name": "motopress-hotel-booking/featured-image",
+  "category": "hotel-booking",
+  "icon": "admin-home",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string",
+      "default": ""
+    },
+    "linkToPost": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
