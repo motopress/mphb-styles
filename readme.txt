@@ -62,7 +62,7 @@ Hotel Booking Styles plugin is distributed under the terms of the GNU GPL.
 == Changelog ==
 
 = 1.1.0, Nov 15 2022 =
-* Added ability to edit template of Accommodation Type page.
+* Added the ability to edit templates of the Accommodation Type pages.
 
 = 1.0.2, Nov 23 2021 =
 * Security - sanitization and escaping.

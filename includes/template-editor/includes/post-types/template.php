@@ -67,7 +67,7 @@ class AccommodationTemplate {
         ?>
         <script type="text/javascript">
             jQuery(function () {
-                var pageDescription = "<?php echo esc_html__('Description', 'mphb-styles'); ?>";
+                var pageDescription = "<?php echo esc_html__('Сhange the default look of your accommodation type pages by creating custom templates.You can apply your templates to the needed accommodation types.', 'mphb-styles'); ?>";
                 var description = jQuery('<p />', {'html': pageDescription});
 
                 jQuery('#wpbody-content > .wrap > ul.subsubsub').first().before(description);

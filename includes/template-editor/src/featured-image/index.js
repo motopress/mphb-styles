@@ -12,8 +12,7 @@ registerBlockType( 'motopress-hotel-booking/featured-image', {
         const { attributes, setAttributes } = props;
 
         const imageSizes = useSelect( ( select ) => {
-            let id = attributes.id ? attributes.id : select('core/editor').getCurrentPostId();
-            const postEntity = select('core').getEntityRecord('postType', 'mphb_room_type', id);
+            const postEntity = select('core').getEntityRecord('postType', 'mphb_room_type', attributes.id);
             const mediaSizes = select('core').getMedia(postEntity?.featured_media)?.media_details.sizes;
             const mediaSizesSetting = select( 'core/block-editor' ).getSettings().imageSizes;
 

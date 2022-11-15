@@ -58,7 +58,7 @@ registerBlockType( 'motopress-hotel-booking/gallery', {
                             label={ __( 'Display as slider', 'mphb-styles' ) }
                             checked={ attributes.slider }
                             onChange={ ( value ) => setAttributes( { slider: value } ) }
-                            help={ __( 'This option is applied on frontend only.', 'mphb-styles' ) }
+                            help={ __( 'Check it out on the frontend once applied.', 'mphb-styles' ) }
                         />
                         <TextControl
                             label={ __( 'Columns', 'mphb-styles' ) }

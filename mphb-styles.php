@@ -2,7 +2,7 @@
 
 /*
  * Plugin Name: Hotel Booking Styles & Templates
- * Description: Extra CSS styles to customize the MotoPress Hotel Booking plugin forms and widgets.
+ * Description: A set of tools to easily customize and style the booking forms, widgets, and accommodation type pages for the MotoPress Hotel Booking plugin.
  * Version: 1.1.0
  * Author: MotoPress
  * Author URI: https://motopress.com/

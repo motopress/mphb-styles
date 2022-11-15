@@ -134,7 +134,7 @@ class Attribute {
                 break;
             default:
                 ?><div class="mphb-single-room-type-attribute mphb-room-type-undefined-attribute"><?php
-                esc_html_e('Please choose attribute from available', 'mphb-styles');
+                esc_html_e('Please choose an attribute from available ones.', 'mphb-styles');
                 ?></div><?php
                 break;
         endswitch;
