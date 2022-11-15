@@ -31,14 +31,16 @@ class AccommodationTemplate {
             'show_in_menu' => false,
             'show_in_admin_bar' => false,
             'template' => array(
-                array( 'motopress-hotel-booking/featured-image', array() ),
-                array( 'motopress-hotel-booking/title', array() ),
-                array( 'motopress-hotel-booking/gallery', array() ),
-                array( 'motopress-hotel-booking/content', array() ),
-                array( 'motopress-hotel-booking/price', array() ),
-                array( 'motopress-hotel-booking/attributes', array() ),
-                array( 'motopress-hotel-booking/availability-calendar', array() ),
-                array( 'motopress-hotel-booking/availability', array() ),
+                array( 'motopress-hotel-booking/wrapper', array(), array(
+                    array( 'motopress-hotel-booking/featured-image', array() ),
+                    array( 'motopress-hotel-booking/title', array() ),
+                    array( 'motopress-hotel-booking/gallery', array() ),
+                    array( 'motopress-hotel-booking/content', array() ),
+                    array( 'motopress-hotel-booking/price', array() ),
+                    array( 'motopress-hotel-booking/attributes', array() ),
+                    array( 'motopress-hotel-booking/availability-calendar', array() ),
+                    array( 'motopress-hotel-booking/availability', array() )
+                ) )
             ),
 		));
     }
