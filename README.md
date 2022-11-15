@@ -18,20 +18,20 @@ Useful links: [Hotel Booking Styles & Templates Download](https://wordpress.org/
 ## Getting Started
 The list of styles available with this plugin:
 
-`is-style-horizontal-form` - to make a default property search form horizontal
-`mphbs-hide-labels` - to remove field labels from the form
-`mphbs-no-paddings` - to remove paddings for the form fields
-`mphbs-hide-rf-tip` - to remove required fields tip
-`mphbs-wrap` - to wrap a form fields on a new line
-`mphbs-fluid-button` - to stretch the ‘search’ button to fit available space
-`mphbs-fw-20`, `mphbs-fw-25`, `mphbs-fw-33`, `mphbs-fw-50`, `mphbs-fw-100` - to change the width of the default form fields
-`is-direct-booking` - to enable horizontal form style for direct booking form for an individual property (works only with the is-style-horizontal-form class and ‘direct bookings’ enabled in the plugin settings).
+* `is-style-horizontal-form` - to make a default property search form horizontal.
+* `mphbs-hide-labels` - to remove field labels from the form.
+* `mphbs-no-paddings` - to remove paddings for the form fields.
+* `mphbs-hide-rf-tip` - to remove required fields tip.
+* `mphbs-wrap` - to wrap a form fields on a new line.
+* `mphbs-fluid-button` - to stretch the ‘search’ button to fit available spacel
+* `mphbs-fw-20`, `mphbs-fw-25`, `mphbs-fw-33`, `mphbs-fw-50`, `mphbs-fw-100` - to change the width of the default form fields.
+* `is-direct-booking` - to enable horizontal form style for direct booking form for an individual property (works only with the is-style-horizontal-form class and ‘direct bookings’ enabled in the plugin settings).
 
-Working with templates:
+### Working with templates
 
 1. To add a new template, go to Accommodation > Templates > Add New > Give it a name.
 2. Click on every block to see its customization panel from the right and make the needed edits. You can optionally change the order of the blocks or even delete unneeded ones.
-3. Once you customized and saved your template, go to Accommodation types > sel ect the one you want to apply a new look to > choose the needed one fr om the Template selector > save the changes.
+3. Once you customized and saved your template, go to Accommodation types > select the one you want to apply a new look to > choose the needed one from the Template selector > save the changes.
 
 ### Build styles
 * In the plugin directory run `npm install`.
@@ -45,11 +45,11 @@ Working with templates:
 1. To subtract new strings run `wp i18n make-pot ./.. mphb-styles-new.pot --subtract="mphb-styles.pot"`
 
 ## Support
-This is a developer's portal for the Hotel Booking Styles plugin and should not be used for support. Please visit the support page if you need to submit a support request.
+This is a developer's portal for the Hotel Booking Styles & Templates plugin and should not be used for support. Please visit the support page if you need to submit a support request.
 
 ## License
-Hotel Booking Styles WordPress Plugin, Copyright (C) 2020, MotoPress.
-Hotel Booking Styles is distributed under the terms of the GNU GPL.
+Hotel Booking Styles & Templates WordPress Plugin, Copyright (C) 2020, MotoPress.
+Hotel Booking Styles & Templates is distributed under the terms of the GNU GPL.
 
 ## Contributions
 Anyone is welcome to contribute.
