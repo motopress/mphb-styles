@@ -167,9 +167,10 @@ class Gallery {
 
     public function filterSliderAttributes($atts) {
         $atts['minItems'] = 1;
-        $atts['maxItems'] = (int)$this->galleryParams['columns'];
+        $atts['maxItems'] = (int)$this->galleryParams['columns'] ? (int)$this->galleryParams['columns'] : 1;
         $atts['move'] = 1;
-        $atts['itemWidth'] = floor(100/(int)$this->galleryParams['columns']);
+
+        $atts['itemWidth'] = floor(100/$atts['maxItems']);
 
         return $atts;
     }

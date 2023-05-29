@@ -3,9 +3,9 @@ Contributors: motopress
 Donate link: https://motopress.com/
 Tags: motopress hotel booking, hotel booking styles, free hotel booking plugin, booking form
 Requires at least: 5.4
-Tested up to: 6.1
+Tested up to: 6.2
 Requires PHP: 5.6
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ Hotel Booking Styles & Templates, Copyright (C) 2020, MotoPress https://motopres
 Hotel Booking Styles & Templates plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 1.1.1, May 29 2023 =
+* Fixed an issue with the slider columns setting in the Accommodation Type Gallery block.
 
 = 1.1.0, Nov 15 2022 =
 * Added the ability to edit templates of the Accommodation Type pages.
