@@ -17,6 +17,7 @@ class AccommodationTemplate {
             'labels'      => array(
                 'name' => __('Templates (beta)', 'mphb-styles'),
                 'singular_name' => __('Template', 'mphb-styles'),
+                'add_new' => __('Add New Template', 'mphb-styles'),
                 'add_new_item' => __('Add New Template', 'mphb-styles'),
                 'edit_item' => __('Edit Template', 'mphb-styles'),
                 'new_item' => __('New Template', 'mphb-styles'),

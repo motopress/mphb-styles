@@ -7,6 +7,7 @@ use MPHB\Views\SingleRoomTypeView;
 class Attribute {
 
     public $slug = 'attribute';
+    public $customAttributes = [];
     private $showLabel = true;
 
     public function __construct() {
