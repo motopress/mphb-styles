@@ -16,6 +16,7 @@ class TemplatesRegistrar {
 
         add_action('init', array($this, 'addTemplates'));
         add_filter('single_template', array($this, 'maybeReplaceAccommodationTemplate'), 20);
+        add_filter('single_template', array($this, 'maybeReplaceTemplateTemplate'), 20);
     }
 
     private function setupTemplates() {
@@ -51,6 +52,34 @@ class TemplatesRegistrar {
 
     public function filterAccommodationTypeTemplatesDropdown($templates) {
         return $templates + $this->customTemplates;
+    }
+
+    public function maybeReplaceTemplateTemplate($template) {
+        global $post;
+
+        if(!$post || $post->post_type != 'mphb_template') {
+            return $template;
+        }
+
+        $phpTemplate = get_post_meta($post->ID, '_wp_page_template', true);
+        $hasPHPTemplate = isset($this->templates[$phpTemplate]);
+
+        if(!$hasPHPTemplate) {
+            return $template;
+        }
+
+        // try to apply template for selected Template(Full Width or Canvas)
+        $file = locate_template(MPHB()->getTemplatePath() . 'templates/single/' . $phpTemplate . '.php');
+
+        if(empty($file)) {
+            $file = MPHB_TEMPLATES_PATH . 'includes/templates/single/' . $phpTemplate . '.php';
+        }
+
+        if(file_exists($file)) {
+            return $file;
+        }
+
+        return $template;
     }
 
     public function maybeReplaceAccommodationTemplate($template) {
