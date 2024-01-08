@@ -1,17 +1,17 @@
-# Copyright (C) 2022 MotoPress
+# Copyright (C) 2024 MotoPress
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hotel Booking Styles & Templates 1.0.2\n"
+"Project-Id-Version: Hotel Booking Styles & Templates 1.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mphb-styles\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-15T13:29:53+02:00\n"
+"POT-Creation-Date: 2024-01-08T14:29:32+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.7.1\n"
+"X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: mphb-styles\n"
 
 #. Plugin Name of the plugin
@@ -19,7 +19,7 @@ msgid "Hotel Booking Styles & Templates"
 msgstr ""
 
 #. Description of the plugin
-msgid "Extra CSS styles to customize the MotoPress Hotel Booking plugin forms and widgets."
+msgid "A set of tools to easily customize and style the booking forms, widgets, and accommodation type pages for the MotoPress Hotel Booking plugin."
 msgstr ""
 
 #. Author of the plugin
@@ -38,6 +38,10 @@ msgstr ""
 #: includes/filters.php:52
 #: includes/template-editor/build/featured-image/index.js:1
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/featured-image/index.js:19
+#: includes/template-editor/src/gallery/index.js:25
+#: includes/template-editor/src/gallery/index.js:74
+#: includes/template-editor/src/gallery/index.js:87
 msgid "Default"
 msgstr ""
 
@@ -178,53 +182,52 @@ msgstr ""
 msgid "Available for Availability Search Form and Search Availability Widget."
 msgstr ""
 
-#: includes/template-editor/includes/blocks/attribute.php:137
-msgid "Please choose attribute from available"
+#: includes/template-editor/includes/blocks/attribute.php:138
+msgid "Please choose an attribute from available ones."
 msgstr ""
 
 #: includes/template-editor/includes/post-types/template.php:18
-msgid "Templates (beta)"
+#: includes/template-editor/includes/post-types/template.php:57
+#: includes/template-editor/includes/post-types/template.php:58
+msgid "Templates"
 msgstr ""
 
 #: includes/template-editor/includes/post-types/template.php:19
 #: includes/template-editor/build/template/index.js:1
+#: includes/template-editor/src/template/index.js:62
 msgid "Template"
 msgstr ""
 
 #: includes/template-editor/includes/post-types/template.php:20
+#: includes/template-editor/includes/post-types/template.php:21
 msgid "Add New Template"
 msgstr ""
 
-#: includes/template-editor/includes/post-types/template.php:21
+#: includes/template-editor/includes/post-types/template.php:22
 msgid "Edit Template"
 msgstr ""
 
-#: includes/template-editor/includes/post-types/template.php:22
+#: includes/template-editor/includes/post-types/template.php:23
 msgid "New Template"
 msgstr ""
 
-#: includes/template-editor/includes/post-types/template.php:23
+#: includes/template-editor/includes/post-types/template.php:24
 msgid "View Template"
 msgstr ""
 
-#: includes/template-editor/includes/post-types/template.php:24
+#: includes/template-editor/includes/post-types/template.php:25
 msgid "Search Templates"
 msgstr ""
 
-#: includes/template-editor/includes/post-types/template.php:49
-#: includes/template-editor/includes/post-types/template.php:50
-msgid "Templates"
+#: includes/template-editor/includes/post-types/template.php:76
+msgid "Сhange the look of your accommodation type pages by creating custom templates. You can apply your templates to the chosen properties via Accommodation Type > Template selector."
 msgstr ""
 
-#: includes/template-editor/includes/post-types/template.php:68
-msgid "Description"
-msgstr ""
-
-#: includes/template-editor/includes/templates.php:24
+#: includes/template-editor/includes/templates.php:26
 msgid "Hotel Booking Full Width"
 msgstr ""
 
-#: includes/template-editor/includes/templates.php:25
+#: includes/template-editor/includes/templates.php:27
 msgid "Hotel Booking Canvas"
 msgstr ""
 
@@ -235,6 +238,7 @@ msgstr ""
 #: includes/template-editor/build/gallery/index.js:1
 #: includes/template-editor/build/price/index.js:1
 #: includes/template-editor/build/title/index.js:1
+#: includes/template-editor/src/controls/accommodation-select.js:24
 msgid "Accommodation Type"
 msgstr ""
 
@@ -245,43 +249,57 @@ msgstr ""
 #: includes/template-editor/build/gallery/index.js:1
 #: includes/template-editor/build/price/index.js:1
 #: includes/template-editor/build/title/index.js:1
+#: includes/template-editor/src/controls/accommodation-select.js:28
 msgid "Leave blank to use current."
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
+#: includes/template-editor/src/attribute/index.js:15
 msgid "Adults"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
+#: includes/template-editor/src/attribute/index.js:19
 msgid "Children"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
+#: includes/template-editor/src/attribute/index.js:23
 msgid "Total Capacity"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
 #: includes/template-editor/build/attributes/index.js:1
+#: includes/template-editor/src/attribute/index.js:27
+#: includes/template-editor/src/attributes/index.js:21
 msgid "Amenities"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
 #: includes/template-editor/build/attributes/index.js:1
+#: includes/template-editor/src/attribute/index.js:31
+#: includes/template-editor/src/attributes/index.js:25
 msgid "View"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
 #: includes/template-editor/build/attributes/index.js:1
+#: includes/template-editor/src/attribute/index.js:35
+#: includes/template-editor/src/attributes/index.js:29
 msgid "Size"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
 #: includes/template-editor/build/attributes/index.js:1
+#: includes/template-editor/src/attribute/index.js:39
+#: includes/template-editor/src/attributes/index.js:33
 msgid "Bed Types"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
 #: includes/template-editor/build/attributes/index.js:1
+#: includes/template-editor/src/attribute/index.js:43
+#: includes/template-editor/src/attributes/index.js:37
 msgid "Categories"
 msgstr ""
 
@@ -293,156 +311,203 @@ msgstr ""
 #: includes/template-editor/build/price/index.js:1
 #: includes/template-editor/build/title/index.js:1
 #: includes/template-editor/build/wrapper/index.js:1
+#: includes/template-editor/src/attribute/index.js:70
+#: includes/template-editor/src/attributes/index.js:64
+#: includes/template-editor/src/content/index.js:26
+#: includes/template-editor/src/featured-image/index.js:49
+#: includes/template-editor/src/gallery/index.js:42
+#: includes/template-editor/src/price/index.js:26
+#: includes/template-editor/src/title/index.js:25
+#: includes/template-editor/src/wrapper/index.js:21
 msgid "Settings"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
+#: includes/template-editor/src/attribute/index.js:79
 msgid "Attribute"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
+#: includes/template-editor/src/attribute/index.js:87
 msgid "Show label"
 msgstr ""
 
 #: includes/template-editor/build/attribute/index.js:1
+#: includes/template-editor/src/attribute/index.js:60
 msgid "Accommodation Type Attribute"
 msgstr ""
 
 #: includes/template-editor/build/attributes/index.js:1
+#: includes/template-editor/src/attributes/index.js:17
 msgid "Capacity"
 msgstr ""
 
 #: includes/template-editor/build/attributes/index.js:1
+#: includes/template-editor/src/attributes/index.js:54
 msgid "Accommodation Type Attributes"
 msgstr ""
 
 #: includes/template-editor/build/content/index.js:1
+#: includes/template-editor/src/content/index.js:16
 msgid "Accommodation Type Content"
 msgstr ""
 
 #: includes/template-editor/build/featured-image/index.js:1
 #: includes/template-editor/build/title/index.js:1
+#: includes/template-editor/src/featured-image/index.js:57
+#: includes/template-editor/src/title/index.js:33
 msgid "Link to post"
 msgstr ""
 
 #: includes/template-editor/build/featured-image/index.js:1
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/featured-image/index.js:62
+#: includes/template-editor/src/gallery/index.js:50
 msgid "Image size"
 msgstr ""
 
 #: includes/template-editor/build/featured-image/index.js:1
+#: includes/template-editor/src/featured-image/index.js:40
 msgid "Accommodation Type Image"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:58
 msgid "Display as slider"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
-msgid "This option is applied on frontend only."
+#: includes/template-editor/src/gallery/index.js:61
+msgid "Check it out on the frontend once applied."
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:64
 msgid "Columns"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:71
 msgid "Link to"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:75
 msgid "None"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:76
 msgid "File"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:83
 msgid "Open in lightbox"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:88
 msgid "Yes"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:89
 msgid "No"
 msgstr ""
 
 #: includes/template-editor/build/gallery/index.js:1
+#: includes/template-editor/src/gallery/index.js:33
 msgid "Accommodation Type Gallery"
 msgstr ""
 
 #: includes/template-editor/build/price/index.js:1
+#: includes/template-editor/src/price/index.js:16
 msgid "Accommodation Type Price"
 msgstr ""
 
 #: includes/template-editor/build/template/index.js:1
+#: includes/template-editor/src/template/index.js:27
+#: includes/template-editor/src/template/index.js:53
 msgid "Choose template"
 msgstr ""
 
 #: includes/template-editor/build/template/index.js:1
+#: includes/template-editor/src/template/index.js:93
 msgid "No templates found"
 msgstr ""
 
 #: includes/template-editor/build/template/index.js:1
+#: includes/template-editor/src/template/index.js:80
+#: includes/template-editor/src/template/index.js:99
 msgid "Create template"
 msgstr ""
 
 #: includes/template-editor/build/template/index.js:1
+#: includes/template-editor/src/template/index.js:73
 msgid "Insert"
 msgstr ""
 
 #: includes/template-editor/build/title/index.js:1
+#: includes/template-editor/src/title/index.js:16
 msgid "Accommodation Type Title"
 msgstr ""
 
 #: includes/template-editor/build/wrapper/index.js:1
-msgid "Wrapper width(in pixels)"
+#: includes/template-editor/src/wrapper/index.js:24
+msgid "Width"
 msgstr ""
 
 #: includes/template-editor/build/attribute/block.json
+#: includes/template-editor/src/attribute/block.json
 msgctxt "block title"
 msgid "Accommodation Type Attribute"
 msgstr ""
 
 #: includes/template-editor/build/attributes/block.json
+#: includes/template-editor/src/attributes/block.json
 msgctxt "block title"
 msgid "Accommodation Type Attributes"
 msgstr ""
 
 #: includes/template-editor/build/content/block.json
+#: includes/template-editor/src/content/block.json
 msgctxt "block title"
 msgid "Accommodation Type Content"
 msgstr ""
 
 #: includes/template-editor/build/featured-image/block.json
+#: includes/template-editor/src/featured-image/block.json
 msgctxt "block title"
 msgid "Accommodation Type Image"
 msgstr ""
 
 #: includes/template-editor/build/gallery/block.json
+#: includes/template-editor/src/gallery/block.json
 msgctxt "block title"
 msgid "Accommodation Type Gallery"
 msgstr ""
 
 #: includes/template-editor/build/price/block.json
+#: includes/template-editor/src/price/block.json
 msgctxt "block title"
 msgid "Accommodation Type Price"
 msgstr ""
 
 #: includes/template-editor/build/template/block.json
+#: includes/template-editor/src/template/block.json
 msgctxt "block title"
 msgid "Accommodation Type Template"
 msgstr ""
 
 #: includes/template-editor/build/title/block.json
+#: includes/template-editor/src/title/block.json
 msgctxt "block title"
 msgid "Accommodation Type Title"
 msgstr ""
 
 #: includes/template-editor/build/wrapper/block.json
+#: includes/template-editor/src/wrapper/block.json
 msgctxt "block title"
 msgid "Hotel Booking Wrapper"
 msgstr ""

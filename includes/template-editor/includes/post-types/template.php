@@ -15,7 +15,7 @@ class AccommodationTemplate {
     public function register() {
         register_post_type($this->postType, array(
             'labels'      => array(
-                'name' => __('Templates (beta)', 'mphb-styles'),
+                'name' => __('Templates', 'mphb-styles'),
                 'singular_name' => __('Template', 'mphb-styles'),
                 'add_new' => __('Add New Template', 'mphb-styles'),
                 'add_new_item' => __('Add New Template', 'mphb-styles'),
