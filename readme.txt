@@ -3,7 +3,7 @@ Contributors: motopress
 Donate link: https://motopress.com/
 Tags: motopress hotel booking, hotel booking styles, free hotel booking plugin, booking form
 Requires at least: 5.4
-Tested up to: 6.4
+Tested up to: 6.7
 Requires PHP: 5.6
 Stable tag: 1.1.2
 License: GPLv2 or later
