@@ -1,11 +1,11 @@
-=== Hotel Booking Styles & Templates ===
+=== MotoPress Hotel Booking Styles & Templates ===
 Contributors: motopress
 Donate link: https://motopress.com/
 Tags: motopress hotel booking, hotel booking styles, free hotel booking plugin, booking form
 Requires at least: 5.4
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,13 +13,13 @@ A set of tools to easily customize and style the booking forms, widgets, and acc
 
 == Description ==
 
-This is an extension to the MotoPress [WordPress Booking plugin](https://motopress.com/products/hotel-booking/) for hotels.
+This is an extension to the MotoPress [WordPress Booking plugin](https://motopress.com/products/hotel-booking/?utm_source=wp-org&utm_medium=textlink&utm_campaign=mphb-styles) for hotels.
 
 It provides you with a bundle of ready-made CSS classes for customizing the property search form, booking forms, and other Hotel Booking shortcodes/blocks. It also allows you to give a preferred look to individual accommodation pages via a user-friendly customizer.
 
 The Hotel Booking styles addon will help you revamp and enhance your hotel website design with the required style adjustment.
 
-The add-on also works for the [free Hotel Booking](https://wordpress.org/plugins/motopress-hotel-booking-lite/) plugin version.
+The add-on also works for the [free Hotel Booking plugin](https://wordpress.org/plugins/motopress-hotel-booking-lite/) version.
 
 ### How to work with styles
 
@@ -57,7 +57,7 @@ You can also create custom templates for the accommodation type pages, which wil
 2. Click on every block to see its customization panel from the right and make the needed edits. You can optionally change the order of the blocks or even delete unneeded ones.
 3. Once you customized and saved your template, go to Accommodation types > select the one you want to apply a new look to > choose the needed one from the Template selector > save the changes.
 
-If you are looking for a WordPress hotel template powered by Hotel Booking with the perfectly adjusted styling and custom design, check out our library of the [rental property WordPress themes](https://motopress.com/products/category/hotel-rental-wordpress-themes/).
+If you are looking for a WordPress hotel template powered by the Hotel Booking plugin, complete with custom design and perfectly tailored styling, explore our collection of [rental property WordPress themes](https://motopress.com/products/category/hotel-rental-wordpress-themes/?utm_source=wp-org&utm_medium=textlink&utm_campaign=mphb-styles) and [WordPress Booking Plugins](https://motopress.com/products/category/wordpress-booking-plugins/?utm_source=wp-org&utm_medium=textlink&utm_campaign=mphb-styles).
 
 == Installation ==
 
@@ -66,10 +66,13 @@ If you are looking for a WordPress hotel template powered by Hotel Booking with 
 
 == Copyright ==
 
-Hotel Booking Styles & Templates, Copyright (C) 2020, MotoPress https://motopress.com/
-Hotel Booking Styles & Templates plugin is distributed under the terms of the GNU GPL.
+MotoPress Hotel Booking Styles & Templates, Copyright (C) 2020, MotoPress https://motopress.com/
+MotoPress Hotel Booking Styles & Templates plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 1.1.3, Jul 16 2025 =
+* Version bump.
 
 = 1.1.2, Jan 08 2024 =
 * Improved template replacement for Accommodation Type templates created via Elementor.
