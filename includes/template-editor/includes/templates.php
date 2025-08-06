@@ -12,8 +12,6 @@ class TemplatesRegistrar {
 
     public function __construct() {
 
-        $this->setupTemplates();
-
         add_action('init', array($this, 'addTemplates'));
         add_filter('single_template', array($this, 'maybeReplaceAccommodationTemplate'), 20);
         add_filter('single_template', array($this, 'maybeReplaceTemplateTemplate'), 20);
@@ -42,6 +40,7 @@ class TemplatesRegistrar {
     }
 
     public function addTemplates() {
+		$this->setupTemplates();
         add_filter("theme_{$this->accommodationPostType}_templates", [$this, 'filterAccommodationTypeTemplatesDropdown'], 10, 4);
         add_filter('theme_mphb_template_templates', [$this, 'filterTemplatesDropdown'], 10, 4);
     }
