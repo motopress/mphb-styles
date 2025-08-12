@@ -5,7 +5,7 @@ Tags: motopress hotel booking, hotel booking styles, free hotel booking plugin, 
 Requires at least: 5.4
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ MotoPress Hotel Booking Styles & Templates, Copyright (C) 2020, MotoPress https:
 MotoPress Hotel Booking Styles & Templates plugin is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+
+= 1.1.4, Aug 22 2025 =
+* Improved compatibility with WordPress 6.8, addressing the _load_textdomain_just_in_time notice.
 
 = 1.1.3, Jul 16 2025 =
 * Version bump.
