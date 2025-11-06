@@ -193,7 +193,7 @@ class TemplatesRegistrar {
 	 * @param int $templateID Template post ID.
 	 * @return int Translated template ID or original ID if not translated.
 	 * @see \MPHB\Translation::translateId() For filter details.
-	 * @since x.x.x
+	 * @since 1.1.5
 	 */
 	private function maybeGetTranslatedTemplateId( $templateID ) {
 		return MPHB()->translation()->translateId( $templateID, 'mphb_template' );
