@@ -90,6 +90,8 @@ class TemplatesRegistrar {
 
         // get chosen Template for Acc. Type
         $templateID = get_post_meta($post->ID, '_wp_page_template', true);
+		// maybe get the WPML-translated template ID for the active language if available.
+		$templateID  = $this->maybeGetTranslatedTemplateId( $templateID );
         $hasTemplate = isset($this->customTemplates[$templateID]);
 
         $this->selectedTemplateID = $templateID;
@@ -185,6 +187,17 @@ class TemplatesRegistrar {
         return $content;
     }
 
+	/**
+	 * Retrieves the WPML-translated template ID for the active language if available.
+	 * 
+	 * @param int $templateID Template post ID.
+	 * @return int Translated template ID or original ID if not translated.
+	 * @see \MPHB\Translation::translateId() For filter details.
+	 * @since 1.1.5
+	 */
+	private function maybeGetTranslatedTemplateId( $templateID ) {
+		return MPHB()->translation()->translateId( $templateID, 'mphb_template' );
+	}
 }
 
 new TemplatesRegistrar();
